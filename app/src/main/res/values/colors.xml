@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ea1010</color>
+    <color name="colorPrimaryDark">#ea1010</color>
+    <color name="colorAccent">#ea1010</color>
+    <color name="colorView">#DCDCDC</color><!--淡灰色 -->
+    <color name="color_nong">#8fc31f</color>
+    <color name="color_ding">#fccb33</color>
+    <color name="color_ding2">#ff5594</color>
+    <color name="color_shang">#f47709</color>
+    <color name="color_yi">#a6da36</color>
+    <color name="bg_color">#ededed</color>
+    <color name="whitesmoke">#f5f5f5</color>
+</resources>

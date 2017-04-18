@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">"18master "</string>
+    <string name="name_tese">"特色频道"</string>
+    <string name="name_nong">"农家乐"</string>
+    <string name="name_jia">"吃喝玩乐要啥有啥"</string>
+    <string name="name_ding">"订饭店"</string>
+    <string name="name_ding2">"订酒店"</string>
+    <string name="name_shang">"商品众筹"</string>
+    <string name="name_yi">"一元云购"</string>
+    <string name="name_fan">"不排队，提前订座"</string>
+    <string name="name_fan2">"精选同城优质房源"</string>
+    <string name="name_ping">"众筹的方式实现心愿"</string>
+    <string name="name_yuan">"爆款大牌随心购"</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/size_129"
+                android:layout_height="@dimen/size_25px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/size_23px"
+                    android:layout_height="@dimen/size_23px"
+                    android:layout_marginLeft="@dimen/size_12px"
+                    android:src="@drawable/tese3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_ding2"
+                    android:textColor="@color/color_ding2"
+                    android:textSize="@dimen/size_18px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/size_129"
+                android:layout_height="@dimen/size_24px"
+                android:layout_marginLeft="@dimen/size_12px"
+                android:text="@string/name_fan2"
+                android:textSize="@dimen/size_14px" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/size_88"
+            android:layout_height="@dimen/size_65"
+            android:scaleType="fitXY"
+            android:src="@drawable/tesemg4" />
+    </LinearLayout>
+
+</LinearLayout>

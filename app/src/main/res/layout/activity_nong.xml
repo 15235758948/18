@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/size_137px"
+            android:layout_height="@dimen/size_25px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_23px"
+                android:layout_height="@dimen/size_23px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/size_12px"
+                android:layout_marginTop="@dimen/size_2px"
+                android:src="@drawable/tese1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/name_nong"
+                android:textColor="@color/color_nong"
+                android:textSize="@dimen/size_18px"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12px"
+            android:text="@string/name_jia"
+            android:textSize="@dimen/size_14px" />
+
+        <ImageView
+            android:layout_width="@dimen/size_116"
+            android:layout_height="@dimen/size_87"
+            android:layout_marginLeft="@dimen/size_12px"
+            android:scaleType="fitXY"
+            android:src="@drawable/tesemg1" />
+    </LinearLayout>
+</LinearLayout>

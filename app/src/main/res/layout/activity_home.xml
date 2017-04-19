@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.administrator.a18master.base.banner.BannerLayout
+                android:id="@+id/layout_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp" />
+
+            <include
+                layout="@layout/my_shequ"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_42dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/darkgray" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/layout_banner_shequ"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_140dp" />
+
+            <include
+                layout="@layout/home_xydian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/darkgray" />
+
+            <include
+                layout="@layout/home_xsqianggou"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/darkgray" />
+
+            <include
+                layout="@layout/activity_tese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.administrator.a18master.base.banner.BannerLayout
+                android:id="@+id/layout_banners"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_100dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

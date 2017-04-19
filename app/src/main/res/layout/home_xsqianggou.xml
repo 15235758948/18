@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48dp">
+
+        <ImageView
+            android:id="@+id/ico3"
+            android:src="@drawable/ico3"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/home_xhqg" />
+
+        <TextView
+            android:padding="@dimen/size_10dp"
+            android:textSize="@dimen/size_40px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_xsqg"
+            android:id="@+id/home_xhqg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:textColor="@color/name_xl"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/home_xsxl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="还剩 22：22：22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ico3" />
+    </RelativeLayout>
+</LinearLayout>

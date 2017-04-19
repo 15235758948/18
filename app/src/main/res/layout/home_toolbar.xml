@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/toolbar_image"
+            android:layout_width="@dimen/size_26dp"
+            android:layout_height="@dimen/size_26dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:src="@drawable/ico_7" />
+
+        <TextView
+            android:id="@+id/toolbar_qd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/toolbar_image"
+            android:gravity="center"
+            android:textSize="@dimen/size_40px"
+            android:padding="@dimen/size_10dp"
+            android:text="@string/toolbar_qiandao"
+            android:textColor="@color/colorBai" />
+
+        <TextView
+            android:id="@+id/toolbar_city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/size_10px"
+            android:text="@string/city_name"
+            android:textColor="@color/colorBai"
+            android:textSize="@dimen/size_40px" />
+
+        <EditText
+            android:layout_margin="@dimen/size_10dp"
+            android:id="@+id/toolbar_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/slategray"
+            android:drawableLeft="@drawable/ico_2"
+            android:hint="@string/toolbar_text"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/toolbar_city_text"
+            android:layout_toStartOf="@+id/toolbar_qd_text"/>
+
+    </RelativeLayout>
+</LinearLayout>

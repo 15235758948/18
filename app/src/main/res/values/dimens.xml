@@ -4,11 +4,25 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="size_0dp">0dp</dimen>
     <dimen name="size_2dp">2dp</dimen>
+    <dimen name="size_5dp">5dp</dimen>
     <dimen name="size_10dp">10dp</dimen>
+    <dimen name="size_15dp">15dp</dimen>
+    <dimen name="size_20dp">20dp</dimen>
+    <dimen name="size_22dp">22dp</dimen>
+    <dimen name="size_26dp">26dp</dimen>
+    <dimen name="size_42dp">42dp</dimen>
+    <dimen name="size_48dp">48dp</dimen>
+    <dimen name="size_50dp">50dp</dimen>
+    <dimen name="size_56dp">56dp</dimen>
     <dimen name="size_100dp">100dp</dimen>
+    <dimen name="size_140dp">140dp</dimen>
+
+
+
     <dimen name="size_1px">1px</dimen>
     <dimen name="size_2px">2px</dimen>
     <dimen name="size_5px">5px</dimen>
+    <dimen name="size_10px">10px</dimen>
     <dimen name="size_12px">12px</dimen>
     <dimen name="size_14px">14px</dimen>
     <dimen name="size_17px">17px</dimen>
@@ -19,6 +33,7 @@
     <dimen name="size_24px">24px</dimen>
     <dimen name="size_25px">25px</dimen>
     <dimen name="size_30px">30px</dimen>
+    <dimen name="size_40px">40px</dimen>
     <dimen name="size_42px">42px</dimen>
     <dimen name="size_51px">51px</dimen>
     <dimen name="size_65">65px</dimen>

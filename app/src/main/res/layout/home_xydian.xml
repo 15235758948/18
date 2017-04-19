@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_20dp">
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/selector_ic_account"
+            android:layout_width="@dimen/size_15dp"
+            android:layout_height="@dimen/size_15dp"
+            android:textColor="@drawable/selector_color_accent"
+            android:id="@+id/home_xyd_2"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/selector_ic_account"
+            android:layout_width="@dimen/size_15dp"
+            android:layout_height="@dimen/size_15dp"
+            android:id="@+id/home_xyd_1"
+            android:layout_alignTop="@+id/home_xyd_2"
+            android:layout_toStartOf="@+id/home_xyd_2" />
+
+        <ImageView
+            android:padding="3dp"
+            android:src="@drawable/selector_ic_account"
+            android:layout_width="@dimen/size_15dp"
+            android:layout_height="@dimen/size_15dp"
+            android:id="@+id/home_xyd_3"
+            android:layout_alignTop="@+id/home_xyd_2"
+            android:layout_toEndOf="@+id/home_xyd_2" />
+    </RelativeLayout>
+</LinearLayout>

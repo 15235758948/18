@@ -11,4 +11,9 @@
     <string name="name_fan2">"精选同城优质房源"</string>
     <string name="name_ping">"众筹的方式实现心愿"</string>
     <string name="name_yuan">"爆款大牌随心购"</string>
+    <string name="name_home">"首页"</string>
+    <string name="name_shop">"抢购"</string>
+    <string name="name_focus">"关注"</string>
+    <string name="name_my">"我的"</string>
+    <string name="name_more">"更多"</string>
 </resources>

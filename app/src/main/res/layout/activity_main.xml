@@ -14,16 +14,16 @@
     <FrameLayout
         android:id="@+id/main_content"
         android:layout_width="fill_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/size_0dp"
         android:layout_weight="1" />
     <RadioGroup
         android:id="@+id/tab_menu"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/size_51px"
         android:orientation="horizontal" >
         <RadioButton
             android:id="@+id/rbChat"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
@@ -31,43 +31,43 @@
             android:checked="true"
             android:drawableTop="@drawable/tab_selector_checked_home"
             android:gravity="center_horizontal|bottom"
-            android:paddingTop="2dp"
+            android:paddingTop="@dimen/size_2dp"
             android:text="@string/name_home"
             android:textSize="@dimen/size_18px"/>
         <RadioButton
             android:id="@+id/rbAddress"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/tab_selector_checked_shop"
             android:gravity="center_horizontal|bottom"
-            android:paddingTop="2dp"
+            android:paddingTop="@dimen/size_2dp"
             android:text="@string/name_shop"
             android:textSize="@dimen/size_18px"/>
         <RadioButton
             android:id="@+id/rbFind"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/tab_selector_checked_focus"
             android:gravity="center_horizontal|bottom"
-            android:paddingTop="2dp"
+            android:paddingTop="@dimen/size_2dp"
             android:text="@string/name_focus"
             android:textSize="@dimen/size_18px"/>
         <RadioButton
             android:id="@+id/rbMe"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/size_0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_weight="1"
             android:button="@null"
             android:drawableTop="@drawable/tab_selector_checked_my"
             android:gravity="center_horizontal|bottom"
-            android:paddingTop="2dp"
+            android:paddingTop="@dimen/size_2dp"
             android:text="@string/name_my"
             android:textSize="@dimen/size_18px"/>
     </RadioGroup>

@@ -35,6 +35,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+//        底部导航+Fragment切换
         initView();
 
     }
@@ -44,8 +45,6 @@ public class MainActivity extends FragmentActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.main_content, homeFragment).commit();
         myTabRg = (RadioGroup) findViewById(R.id.tab_menu);
         myTabRg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-
-
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO Auto-generated method stub

@@ -16,5 +16,6 @@
     <color name="black">#666</color>
     <color name="name_xl">#ff3c00</color>
     <color name="slategray">#708090</color><!--灰石色 -->
+    <color name="color_radio">#eee</color>
 
 </resources>

@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorBai">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -10,35 +11,36 @@
         android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="@dimen/size_129"
-            android:layout_height="@dimen/size_25px"
+            android:layout_width="@dimen/size_129dp"
+            android:layout_height="@dimen/size_25dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="@dimen/size_23px"
-                android:layout_height="@dimen/size_23px"
-                android:layout_marginLeft="@dimen/size_12px"
+                android:layout_width="@dimen/size_23dp"
+                android:layout_height="@dimen/size_23dp"
+                android:layout_marginLeft="@dimen/size_10dp"
                 android:src="@drawable/tese4" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/name_shang"
+                android:layout_marginLeft="@dimen/size_10dp"
                 android:textColor="@color/color_shang"
-                android:textSize="@dimen/size_18px"
+                android:textSize="@dimen/size_18dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <TextView
-            android:layout_width="@dimen/size_137px"
-            android:layout_height="@dimen/size_24px"
-            android:layout_marginLeft="@dimen/size_12px"
+            android:layout_width="@dimen/size_137dp"
+            android:layout_height="@dimen/size_24dp"
+            android:layout_marginLeft="@dimen/size_10dp"
             android:text="@string/name_ping"
-            android:textSize="@dimen/size_14px" />
+            android:textSize="@dimen/size_14dp" />
 
         <ImageView
-            android:layout_width="@dimen/size_70px"
-            android:layout_height="@dimen/size_30px"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_30dp"
             android:scaleType="fitXY"
             android:src="@drawable/tesemg2" />
     </LinearLayout>

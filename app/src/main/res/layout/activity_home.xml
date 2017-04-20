@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/colorBai"
+    android:orientation="vertical">
+
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -60,6 +64,15 @@
                 android:id="@+id/layout_banners"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_100dp" />
+
+            <include
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                layout="@layout/activity_zhuanxtj_toor"/>
+            <include
+                layout="@layout/activity_zhuanxtj"
+                android:layout_width="wrap_content"
+                android:layout_height="780dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

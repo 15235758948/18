@@ -3,11 +3,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <GridView
+        android:scrollbars="none"
         android:id="@+id/list_zhuan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/size_20px"
+        android:layout_marginTop="@dimen/size_5px"
         android:layout_marginRight="@dimen/size_20px"
         android:numColumns="2"/>
 </LinearLayout>

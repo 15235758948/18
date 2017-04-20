@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioGroup
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/color_radio">
+
+        <RadioButton
+            android:id="@+id/rbChat"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_checked_home"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/size_2dp"
+            android:text="@string/name_home"
+            android:textSize="@dimen/size_10dp" />
+
+        <RadioButton
+            android:id="@+id/rbAddress"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_checked_shop"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/size_2dp"
+            android:text="@string/name_shop"
+            android:textSize="@dimen/size_10dp" />
+
+        <RadioButton
+            android:id="@+id/rbFind"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_checked_focus"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/size_2dp"
+            android:text="@string/name_focus"
+            android:textSize="@dimen/size_10dp" />
+
+        <RadioButton
+            android:id="@+id/rbMe"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_selector_checked_my"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/size_2dp"
+            android:text="@string/name_my"
+            android:textSize="@dimen/size_10dp" />
+    </RadioGroup>
+</RelativeLayout>
+

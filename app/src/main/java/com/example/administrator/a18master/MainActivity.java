@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -16,6 +17,7 @@ import android.widget.RadioGroup;
 import com.example.administrator.a18master.base.banner.BannerAdapter;
 import com.example.administrator.a18master.base.banner.BannerLayout;
 import com.example.administrator.a18master.base.banner.LocalBanner;
+import com.example.administrator.a18master.home.FragmentZhuanAdapter;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -51,6 +53,8 @@ public class MainActivity extends FragmentActivity {
     ImageView homeXyd1;
     @BindView(R.id.home_xyd_3)
     ImageView homeXyd3;
+    @BindView(R.id.list_zhuan)
+    GridView listZhuan;
 
     private HomeFragment homeFragment;
     private ShopFragment shopFragment;
@@ -72,7 +76,7 @@ public class MainActivity extends FragmentActivity {
         initBanner();
         initBanners();
         initView();
-
+        initViewQ();
     }
 
     public void init() {
@@ -228,5 +232,20 @@ public class MainActivity extends FragmentActivity {
             default:
                 throw new RuntimeException("未知错误");
         }
+    }
+
+    private void initViewQ() {
+
+        List<Integer[]> list = new ArrayList<>();
+        Integer[] imageIds = new Integer[]{
+                R.drawable.zhuanxtj_1,
+        };
+        for (int i = 0; i < 8; i++) {
+            list.add(imageIds);
+        }
+        FragmentZhuanAdapter fragmentZhuanAdapter = new FragmentZhuanAdapter(this, list);
+        listZhuan.setAdapter(fragmentZhuanAdapter);
+
+
     }
 }

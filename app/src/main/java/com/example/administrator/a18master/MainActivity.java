@@ -1,18 +1,21 @@
 package com.example.administrator.a18master;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import com.example.administrator.a18master.base.banner.BannerAdapter;
 import com.example.administrator.a18master.base.banner.BannerLayout;
@@ -56,11 +59,41 @@ public class MainActivity extends FragmentActivity {
     @BindView(R.id.list_zhuan)
     GridView listZhuan;
 
+    @BindView(R.id.hours_tv)
+    TextView hoursTv;
+    @BindView(R.id.minutes_tv)
+    TextView minutesTv;
+    @BindView(R.id.seconds_tv)
+    TextView secondsTv;
+    @BindView(R.id.countdown_layout)
+    RelativeLayout countDown;
+
     private HomeFragment homeFragment;
     private ShopFragment shopFragment;
     private FocusFragment focusFragment;
     private MyFragment myFragment;
     private RadioGroup myTabRg;
+//    计时器
+    private long mHour = 10;
+    private long mMin = 30;
+    private long mSecond = 00;// 天 ,小时,分钟,秒
+    private boolean isRun = true;
+    private Handler timeHandler = new Handler() {
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if (msg.what == 1) {
+                computeTime();
+                hoursTv.setText(mHour + "");
+                minutesTv.setText(mMin + "");
+                secondsTv.setText(mSecond + "");
+                if ( mHour == 0 && mMin == 0 && mSecond == 0) {
+                    countDown.setVisibility(View.GONE);
+                }
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +110,7 @@ public class MainActivity extends FragmentActivity {
         initBanners();
         initView();
         initViewQ();
+        startRun();
     }
 
     public void init() {
@@ -159,7 +193,7 @@ public class MainActivity extends FragmentActivity {
 
     }
 
-//    初始化视图
+    //    初始化视图
     private void initView() {
         //viewPager适配器
         layoutBannerShequ.setAdapter(adapter);
@@ -169,7 +203,7 @@ public class MainActivity extends FragmentActivity {
         homeXyd1.setSelected(true);
     }
 
-//    viewPager监听->Button的切换
+    //    viewPager监听->Button的切换
     private ViewPager.OnPageChangeListener listener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -234,6 +268,7 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
+    //专享推荐
     private void initViewQ() {
 
         List<Integer[]> list = new ArrayList<>();
@@ -246,6 +281,47 @@ public class MainActivity extends FragmentActivity {
         FragmentZhuanAdapter fragmentZhuanAdapter = new FragmentZhuanAdapter(this, list);
         listZhuan.setAdapter(fragmentZhuanAdapter);
 
+    }
 
+    /**
+     * 开启倒计时
+     */
+    private void startRun() {
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                while (isRun) {
+                    try {
+                        Thread.sleep(1000); // sleep 1000ms
+                        Message message = Message.obtain();
+                        message.what = 1;
+                        timeHandler.sendMessage(message);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+    }
+
+    /**
+     * 倒计时计算
+     */
+    private void computeTime() {
+        mSecond--;
+        if (mSecond < 0) {
+            mMin--;
+            mSecond = 59;
+            if (mMin < 0) {
+                mMin = 59;
+                mHour--;
+                if (mHour < 0) {
+                    // 倒计时结束
+                    mHour = 23;
+                }
+            }
+        }
     }
 }

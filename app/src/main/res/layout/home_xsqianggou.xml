@@ -35,13 +35,120 @@
             android:id="@+id/textView2"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true" />
-
         <TextView
-            android:text="还剩 22：22：22"
+            android:id="@+id/describe_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/ico3" />
-    </RelativeLayout>
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@+id/ico3"
+            android:text="还剩 "
+            android:textSize="@dimen/size_25px" />
+
+        <RelativeLayout
+            android:id="@+id/countdown_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/size_10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/hours_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/colon1"
+                android:gravity="center"
+                android:text="23"
+                android:textSize="@dimen/size_20px" />
+
+            <TextView
+                android:id="@+id/colon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/minutes_tv"
+                android:text=":"
+                android:textSize="@dimen/size_20px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minutes_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/colon2"
+                android:gravity="center"
+                android:text="59"
+                android:textSize="@dimen/size_20px" />
+
+            <TextView
+                android:id="@+id/colon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/seconds_tv"
+                android:text=":"
+                android:textSize="@dimen/size_20px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seconds_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="59"
+                android:textSize="@dimen/size_20px"/>
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/daojishi_rl"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40.0dip"-->
+            <!--android:layout_marginLeft="10.0dip"-->
+            <!--android:layout_marginRight="10.0dip"-->
+            <!--android:gravity="center" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/describe_iv"-->
+                <!--android:layout_width="40.0dip"-->
+                <!--android:layout_height="40.0dip"-->
+                <!--android:background="@drawable/daojishi"-->
+                <!--android:gravity="center_vertical" />-->
+
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/days_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@+id/describe_tv"-->
+                <!--android:background="@drawable/daojishiframe"-->
+                <!--android:gravity="center"-->
+                <!--android:text="20"-->
+                <!--android:textSize="20sp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/colon0"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5.0dip"-->
+                <!--android:layout_marginRight="3.0dip"-->
+                <!--android:layout_toRightOf="@+id/days_tv"-->
+                <!--android:text="天"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold" />-->
+        </RelativeLayout>
+
+
+
 </LinearLayout>

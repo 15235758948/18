@@ -46,16 +46,22 @@
             android:textSize="@dimen/size_40px" />
 
         <EditText
-            android:layout_margin="@dimen/size_10dp"
+            android:cursorVisible="false"
+            android:singleLine="true"
+            android:textSize="@dimen/size_36px"
             android:id="@+id/toolbar_editText"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@color/slategray"
+            android:background="@drawable/rounded_editview"
             android:drawableLeft="@drawable/ico_2"
             android:hint="@string/toolbar_text"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/toolbar_city_text"
-            android:layout_toStartOf="@+id/toolbar_qd_text"/>
+            android:layout_toLeftOf="@+id/toolbar_qd_text"
+            android:layout_toRightOf="@+id/toolbar_city_text"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_margin="@dimen/size_5dp"
+            android:layout_marginBottom="@dimen/size_5dp" />
 
     </RelativeLayout>
 </LinearLayout>

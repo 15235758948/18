@@ -65,6 +65,19 @@
             android:paddingTop="@dimen/size_2dp"
             android:text="@string/name_my"
             android:textSize="@dimen/size_10dp" />
+        <RadioButton
+            android:id="@+id/rbMore"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_selector_checked_more"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="@dimen/size_2dp"
+            android:text="@string/name_more"
+            android:textSize="@dimen/size_10dp" />
     </RadioGroup>
 </RelativeLayout>
 

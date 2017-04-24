@@ -1,38 +1,21 @@
 package com.example.administrator.a18master;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
-import android.widget.GridView;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-
-import com.example.administrator.a18master.base.banner.BannerAdapter;
-import com.example.administrator.a18master.base.banner.BannerLayout;
-import com.example.administrator.a18master.base.banner.LocalBanner;
-import com.example.administrator.a18master.home.FragmentZhuanAdapter;
-import com.squareup.picasso.Picasso;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
-public class MainActivity extends FragmentActivity{
+public class MainActivity extends FragmentActivity {
 
     @BindView(R.id.main_content)
     FrameLayout mainContent;
@@ -46,11 +29,8 @@ public class MainActivity extends FragmentActivity{
     RadioButton rbMe;
     @BindView(R.id.tab_menu)
     RadioGroup tabMenu;
-
-
-
-
-
+    @BindView(R.id.rbMore)
+    RadioButton rbMore;
     private HomeFragment homeFragment;
     private ShopFragment shopFragment;
     private FocusFragment focusFragment;
@@ -66,6 +46,8 @@ public class MainActivity extends FragmentActivity{
         if (getActionBar() != null) {
             getActionBar().hide();
         }
+//        默认不弹出小键盘，点击才弹出
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 //        底部导航+Fragment切换
         init();
 
@@ -102,6 +84,8 @@ public class MainActivity extends FragmentActivity{
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_content, myFragment)
                                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                         break;
+                    case R.id.rbMore:
+                        showPopupMenu(rbMore);
                     default:
                         break;
                 }
@@ -110,7 +94,29 @@ public class MainActivity extends FragmentActivity{
         });
     }
 
+    private void showPopupMenu(View view) {
+        // View当前PopupMenu显示的相对View的位置
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        // menu布局
+        popupMenu.getMenuInflater().inflate(R.menu.main, popupMenu.getMenu());
+        // menu的item点击事件
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
+        // PopupMenu关闭事件
+        popupMenu.setOnDismissListener(new PopupMenu.OnDismissListener() {
+            @Override
+            public void onDismiss(PopupMenu menu) {
+                Toast.makeText(getApplicationContext(), "关闭PopupMenu", Toast.LENGTH_SHORT).show();
+            }
+        });
 
+        popupMenu.show();
+    }
 
 
 }

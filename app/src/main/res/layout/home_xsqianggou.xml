@@ -43,7 +43,7 @@
             android:layout_marginRight="5.0dip"
             android:layout_toRightOf="@+id/ico3"
             android:text="还剩 "
-            android:textSize="@dimen/size_25px" />
+            android:textSize="@dimen/size_40px" />
 
         <RelativeLayout
             android:id="@+id/countdown_layout"
@@ -62,7 +62,7 @@
                 android:layout_toLeftOf="@+id/colon1"
                 android:gravity="center"
                 android:text="23"
-                android:textSize="@dimen/size_20px" />
+                android:textSize="@dimen/size_40px" />
 
             <TextView
                 android:id="@+id/colon1"
@@ -73,7 +73,7 @@
                 android:layout_marginRight="3.0dip"
                 android:layout_toLeftOf="@+id/minutes_tv"
                 android:text=":"
-                android:textSize="@dimen/size_20px"
+                android:textSize="@dimen/size_40px"
                 android:textStyle="bold" />
 
             <TextView
@@ -84,7 +84,7 @@
                 android:layout_toLeftOf="@+id/colon2"
                 android:gravity="center"
                 android:text="59"
-                android:textSize="@dimen/size_20px" />
+                android:textSize="@dimen/size_40px" />
 
             <TextView
                 android:id="@+id/colon2"
@@ -95,7 +95,7 @@
                 android:layout_marginRight="3.0dip"
                 android:layout_toLeftOf="@+id/seconds_tv"
                 android:text=":"
-                android:textSize="@dimen/size_20px"
+                android:textSize="@dimen/size_40px"
                 android:textStyle="bold" />
 
             <TextView
@@ -106,7 +106,7 @@
                 android:layout_centerVertical="true"
                 android:gravity="center"
                 android:text="59"
-                android:textSize="@dimen/size_20px"/>
+                android:textSize="@dimen/size_40px"/>
         </RelativeLayout>
         <!--<RelativeLayout-->
             <!--android:id="@+id/daojishi_rl"-->

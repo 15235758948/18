@@ -73,6 +73,7 @@
             android:layout_weight="1"
             android:button="@null"
             android:checked="true"
+            android:onClick="onClick"
             android:drawableTop="@drawable/tab_selector_checked_more"
             android:gravity="center_horizontal|bottom"
             android:paddingTop="@dimen/size_2dp"

@@ -22,4 +22,9 @@
     <string name="toolbar_text">输入商户名/搜索词</string>
     <string name="toolbar_qiandao">签到</string>
     <string name="city_name">城市名称</string>
+    <string name="home_xsqg_text">宽大摄影</string>
+    <string name="home_xsqg_qian">¥888</string>
+    <string name="home_xsqg_yjia">¥988</string>
+    <string name="home_rmsj">热门商家</string>
+    <string name="home_gdsj">更多商家>></string>
 </resources>

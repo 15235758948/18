@@ -61,6 +61,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_48dp" />
 
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/home_hsollview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </HorizontalScrollView>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_1px"
@@ -75,6 +86,31 @@
                 android:id="@+id/layout_banners"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_100dp" />
+            <View
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/darkgray" />
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_48dp"
+                layout="@layout/activity_rmsj_toor"/>
+            <View
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_1px"
+                android:background="@color/darkgray" />
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <include
+                    layout="@layout/home_hsollview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </HorizontalScrollView>
 
             <include
                 layout="@layout/activity_zhuanxtj_toor"

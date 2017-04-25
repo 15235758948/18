@@ -1,19 +1,18 @@
 package com.example.administrator.a18master;
 
-import android.content.Context;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.test.AndroidTestCase;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.GridView;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -59,6 +58,38 @@ public class HomeFragment extends Fragment {
     ViewPager mPager;
     @BindView(R.id.ll_dot)
     LinearLayout mLlDot;
+    @BindView(R.id.home_xsqg_zhuti1)
+    LinearLayout homeXsqgZhuti1;
+    @BindView(R.id.home_xsqg_zhuti2)
+    LinearLayout homeXsqgZhuti2;
+    @BindView(R.id.home_xsqg_zhuti3)
+    LinearLayout homeXsqgZhuti3;
+    @BindView(R.id.home_xsqg_zhuti4)
+    LinearLayout homeXsqgZhuti4;
+    @BindView(R.id.home_xsqg_zhuti5)
+    LinearLayout homeXsqgZhuti5;
+    @BindView(R.id.home_xsqg_zhuti6)
+    LinearLayout homeXsqgZhuti6;
+    @BindView(R.id.home_xsqg_zhuti7)
+    LinearLayout homeXsqgZhuti7;
+    @BindView(R.id.home_xsqg_zhuti8)
+    LinearLayout homeXsqgZhuti8;
+    @BindView(R.id.home_xsqg_yuan1)
+    TextView homeXsqgYuan1;
+    @BindView(R.id.home_xsqg_yuan2)
+    TextView homeXsqgYuan2;
+    @BindView(R.id.home_xsqg_yuan3)
+    TextView homeXsqgYuan3;
+    @BindView(R.id.home_xsqg_yuan4)
+    TextView homeXsqgYuan4;
+    @BindView(R.id.home_xsqg_yuan5)
+    TextView homeXsqgYuan5;
+    @BindView(R.id.home_xsqg_yuan6)
+    TextView homeXsqgYuan6;
+    @BindView(R.id.home_xsqg_yuan7)
+    TextView homeXsqgYuan7;
+    @BindView(R.id.home_xsqg_yuan8)
+    TextView homeXsqgYuan8;
     //    计时器
     private long mHour = 23;
     private long mMin = 59;
@@ -107,12 +138,11 @@ public class HomeFragment extends Fragment {
         initBanner();
         initBanners();
 
-//   专享推荐
+//        专享推荐
         initViewQ();
 //        计时器
         startRun();
 //        社区初始化数据源
-        //初始化数据源
         initDatas();
         inflater1 = LayoutInflater.from(getContext());
         //总的页数=总数/每页数量，并取整
@@ -136,9 +166,64 @@ public class HomeFragment extends Fragment {
         mPager.setAdapter(new ViewPagerAdapter(mPagerList));
         //设置圆点
         setOvalLayout();
+        initDawlayout();
         return view;
 
     }
+
+    //获取屏幕的高宽
+    private void initDawlayout() {
+        WindowManager wm = this.getActivity().getWindowManager();//获取屏幕宽高
+        int width1 = wm.getDefaultDisplay().getWidth();
+        int height1 = wm.getDefaultDisplay().getHeight();
+        ViewGroup.LayoutParams para1 = homeXsqgZhuti1.getLayoutParams();//获取drawerlayout的布局
+        para1.width = (width1-10) / 3 ;//修改宽度
+        para1.height = height1;//修改高度
+        homeXsqgZhuti1.setLayoutParams(para1); //设置修改后的布局。
+        homeXsqgYuan1.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para2 = homeXsqgZhuti2.getLayoutParams();//获取drawerlayout的布局
+        para2.width =(width1-10) / 3 ;//修改宽度
+        para2.height = height1;//修改高度
+        homeXsqgZhuti2.setLayoutParams(para2); //设置修改后的布局。
+        homeXsqgYuan2.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para3 = homeXsqgZhuti3.getLayoutParams();//获取drawerlayout的布局
+        para3.width =(width1-10) / 3 ;//修改宽度
+        para3.height = height1;//修改高度
+        homeXsqgZhuti3.setLayoutParams(para3); //设置修改后的布局。
+        homeXsqgYuan3.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para4 = homeXsqgZhuti4.getLayoutParams();//获取drawerlayout的布局
+        para4.width =(width1-10) / 3 ;//修改宽度
+        para4.height = height1;//修改高度
+        homeXsqgZhuti4.setLayoutParams(para4); //设置修改后的布局。
+        homeXsqgYuan4.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para5 = homeXsqgZhuti5.getLayoutParams();//获取drawerlayout的布局
+        para5.width = (width1-10) / 3;//修改宽度
+        para5.height = height1;//修改高度
+        homeXsqgZhuti5.setLayoutParams(para5); //设置修改后的布局。
+        homeXsqgYuan5.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para6 = homeXsqgZhuti6.getLayoutParams();//获取drawerlayout的布局
+        para6.width = (width1-10) / 3;//修改宽度
+        para6.height = height1;//修改高度
+        homeXsqgZhuti6.setLayoutParams(para6); //设置修改后的布局。
+        homeXsqgYuan6.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        ViewGroup.LayoutParams para7 = homeXsqgZhuti7.getLayoutParams();//获取drawerlayout的布局
+        para7.width =(width1-10) / 3;//修改宽度
+        para7.height = height1;//修改高度
+        homeXsqgZhuti7.setLayoutParams(para7); //设置修改后的布局。
+        homeXsqgYuan7.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+
+        ViewGroup.LayoutParams para8 = homeXsqgZhuti8.getLayoutParams();//获取drawerlayout的布局
+        para8.width =(width1-10) / 3;//修改宽度
+        para8.height = height1;//修改高度
+        homeXsqgZhuti8.setLayoutParams(para8); //设置修改后的布局。
+        homeXsqgYuan8.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+    }
+
     /**
      * 初始化数据源
      */

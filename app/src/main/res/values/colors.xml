@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#ea1010</color>
     <color name="colorAccent">#ea1010</color>
     <color name="colorView">#DCDCDC</color><!--淡灰色 -->
+    <color name="hs0">#f41414</color>
     <color name="color_nong">#8fc31f</color>
     <color name="color_ding">#fccb33</color>
     <color name="color_ding2">#ff5594</color>
@@ -18,4 +19,10 @@
     <color name="slategray">#708090</color><!--灰石色 -->
     <color name="color_radio">#eee</color>
     <color name="home_xsqg_qian">#f53c42</color>
+    <color name="tuichu">#e74c3c</color>
+
+    <color name="my_wdjf_titles">#f8ff2b</color>
+    <color name="my_wdjf_title1">#ff9c00</color>
+    <color name="my_wdcz_titles">#ff1626</color>
+    <color name="heise">#272727</color>
 </resources>

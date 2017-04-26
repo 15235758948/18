@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+
+            android:id="@+id/my_list_text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_list_wdqgj" />
+
+        <TextView
+            android:id="@+id/my_list_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou1"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image1"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_1" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou1"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image1"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image2"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdyhj" />
+
+
+        <TextView
+            android:id="@+id/my_list_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou2"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image2"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_2" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou2"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image2"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image3"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdzc" />
+
+        <TextView
+            android:id="@+id/my_list_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou3"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image3"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_3" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou3"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image3"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdhd" />
+
+        <TextView
+            android:id="@+id/my_list_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou4"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image4"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_4" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou4"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image4"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image5"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdsc" />
+
+        <TextView
+            android:id="@+id/my_list_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou5"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image5"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_5" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou5"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image5"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image6"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_yhmd" />
+
+        <TextView
+            android:id="@+id/my_list_title6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou6"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image6"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_6" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou6"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image6"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image7"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdyy" />
+
+        <TextView
+            android:id="@+id/my_list_title7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/my_list_jiantou7"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/size_10dp"
+            android:text="@string/hs0"
+            android:textColor="@color/hs0" />
+
+        <ImageView
+            android:id="@+id/my_list_image7"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_7" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou7"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image7"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image8"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdshxx" />
+
+
+        <ImageView
+            android:id="@+id/my_list_image8"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_8" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou8"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image8"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/whitesmoke" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image9"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_qmjjr" />
+
+        <ImageView
+            android:id="@+id/my_list_image9"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_9" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou9"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image9"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image10"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_jfdh" />
+
+        <ImageView
+            android:id="@+id/my_list_image10"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_10" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou10"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image10"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image11"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdkd" />
+
+        <ImageView
+            android:id="@+id/my_list_image11"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_11" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou11"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image11"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15dp"
+        android:background="@color/whitesmoke" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image12"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_txsq" />
+
+        <ImageView
+            android:id="@+id/my_list_image12"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_12" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou12"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image12"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image13"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_xxzx" />
+
+        <ImageView
+            android:id="@+id/my_list_image13"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_13" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou13"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image13"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view13"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@drawable/relativelayout_selector"
+        android:longClickable="true"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp">
+
+        <TextView
+            android:id="@+id/my_list_text14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/my_list_image14"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/size_10dp"
+            android:text="@string/my_wdxx" />
+
+
+        <ImageView
+            android:id="@+id/my_list_image14"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_14" />
+
+        <ImageView
+            android:id="@+id/my_list_jiantou14"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/my_list_image14"
+            android:src="@drawable/ic_chevron_right_black_24dp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/list_view14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1px"
+        android:background="@color/darkgray" />
+
+</LinearLayout>

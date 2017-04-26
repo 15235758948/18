@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_190dp"
+        android:orientation="vertical"
+        android:padding="@dimen/size_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wdqg_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wdqg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wdqg_image"
+                    android:gravity="center"
+                    android:text="@string/my_wdqgs" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wdgw_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wdgw" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wdgw_image"
+                    android:gravity="center"
+                    android:text="@string/my_wdgw" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wddc_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wddc" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wddc_image"
+                    android:gravity="center"
+                    android:text="@string/my_wddc" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wddz_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wddz" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wddz_image"
+                    android:gravity="center"
+                    android:text="@string/my_wddz" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wdyg_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/wdyg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wdyg_image"
+                    android:gravity="center"
+                    android:text="@string/my_wdyg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/my_wdjdyy_image"
+                    android:layout_width="@dimen/size_44dp"
+                    android:layout_height="@dimen/size_44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jdyy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/my_wdjdyy_image"
+                    android:gravity="center"
+                    android:text="@string/my_jdyy" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

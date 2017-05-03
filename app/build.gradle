@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -35,4 +35,23 @@ dependencies {
     compile 'jp.wasabeef:picasso-transformations:2.1.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile project(path: ':popmenu')
+    //mosby。MVP
+    compile 'com.hannesdorfmann.mosby:mvp:2.0.1'
+    //okHttp
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    //日志拦截器
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //Gson
+    compile 'com.google.code.gson:gson:2.8.0'
+    //工具类
+    compile 'org.apache.commons:commons-lang3:3.4'
+    //图片裁剪的库
+    compile 'org.hybridsquad.android.photocropper:library:2.1.0'
+    //ImageLoader（用于图片加载）
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //recyclerview
+    compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile project(':apphx')
 }

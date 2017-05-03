@@ -25,4 +25,11 @@
     <color name="my_wdjf_title1">#ff9c00</color>
     <color name="my_wdcz_titles">#ff1626</color>
     <color name="heise">#272727</color>
+    <color name="co_login_bg">#f0f0f0</color>
+    <color name="co_edit_bg">#ffffff</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_goods_name">#3e4346</color>
+    <color name="bg_page">#ebebeb</color>
+    <color name="background">#eeeeee</color>
+    <color name="text_color_hint">#3d4245</color>
 </resources>

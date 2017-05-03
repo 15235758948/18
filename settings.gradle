@@ -1,1 +1,1 @@
-include ':app', ':popmenu'
+include ':app', ':popmenu', ':easeui', ':apphx'

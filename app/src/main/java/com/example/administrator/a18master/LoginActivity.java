@@ -65,7 +65,7 @@ public class LoginActivity extends MvpActivity<LoginView,LoginPresenter> impleme
 //        register.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                Intent intent = new Intent(MVPLoginActivity.this, MainActivity.class);
 //                startActivity(intent);
 //            }
 //        });

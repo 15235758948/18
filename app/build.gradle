@@ -18,6 +18,15 @@ android {
         }
     }
 }
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.android.tools.build:gradle:2.2.1'
+    }
+}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -54,4 +63,17 @@ dependencies {
     compile 'com.pkmmte.view:circularimageview:1.1'
     compile 'org.apache.commons:commons-lang3:3.4'
     compile project(':apphx')
+    //RxJava
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    //View注入工具
+//    apt 'com.jakewharton:butterknife-compiler:latest.release'
+    compile 'com.jakewharton:butterknife:latest.release'
+    //内存泄漏检查
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+    //网络请求工具
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
 }

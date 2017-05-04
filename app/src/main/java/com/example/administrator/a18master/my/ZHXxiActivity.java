@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.example.administrator.a18master.MainActivity;
 import com.example.administrator.a18master.R;
 import com.example.administrator.a18master.commons.AvatarLoadOptions;
+import com.example.administrator.a18master.mvplogin.Login.LoginMvpActivity;
 import com.example.administrator.a18master.network.EasyShopApi;
 import com.example.administrator.a18master.register.ProgressDialogFragment;
 import com.example.administrator.a18master.utils.ActivityUtils;
@@ -101,11 +102,12 @@ public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> impl
 
     //数据初始化
     private void init() {
-        
+
         User user = CachePreferences.getUser();
         list.add(new ItemShow(getResources().getString(R.string.username), user.getName()));
         list.add(new ItemShow(getResources().getString(R.string.nickname), user.getNick_name()));
         list.add(new ItemShow(getResources().getString(R.string.hx_id), user.getHx_Id()));
+
     }
 
     @Override
@@ -134,7 +136,7 @@ public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> impl
         }
     };
 
-    @OnClick({R.id.btn_login_out, R.id.iv_user_head})
+    @OnClick({R.id.btn_login_out, R.id.iv_user_head,R.id.xingxi_linear})
     public void onClick(View view) {
         switch (view.getId()) {
             //点击头像
@@ -163,6 +165,10 @@ public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> impl
                 HxUserManager.getInstance().asyncLogout();
                 //登出关掉通知栏中的通知
                 EaseUI.getInstance().getNotifier().reset();
+            case R.id.xingxi_linear:
+                Intent intent1=new Intent(this, LoginMvpActivity.class);
+                startActivity(intent1);
+                break;
         }
     }
 

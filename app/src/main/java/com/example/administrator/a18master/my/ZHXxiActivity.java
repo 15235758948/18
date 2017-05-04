@@ -41,8 +41,8 @@ import butterknife.OnClick;
  */
 
 public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> implements PersonView {
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
+//    @BindView(R.id.toolbar)
+//    Toolbar toolbar;
     @BindView(R.id.listView)
     ListView listView;
     @BindView(R.id.iv_user_head)
@@ -62,15 +62,13 @@ public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> impl
         activityUtils = new ActivityUtils(this);
 //        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("个人信息");
         adapter = new PersonAdapter(list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(onItemClickListener);
 
         //获取用户头像
         updataAvatar(CachePreferences.getUser().getHead_Image());
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
 //        if (!TextUtils.isEmpty(pNumber) && pNumber.length() > 6) {
 //            StringBuilder sb = new StringBuilder();
 //            for (int i = 0; i < pNumber.length(); i++) {
@@ -103,6 +101,7 @@ public class ZHXxiActivity extends MvpActivity<PersonView, PersonPersenter> impl
 
     //数据初始化
     private void init() {
+        
         User user = CachePreferences.getUser();
         list.add(new ItemShow(getResources().getString(R.string.username), user.getName()));
         list.add(new ItemShow(getResources().getString(R.string.nickname), user.getNick_name()));

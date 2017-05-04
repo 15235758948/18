@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/footico_more"
+    <item android:drawable="@drawable/footco5"
         android:state_checked="false" />
-    <item android:drawable="@drawable/footco_on_more"
+    <item android:drawable="@drawable/footco_on_5"
         android:state_checked="true" />
 
 </selector>

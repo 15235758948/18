@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 
-
 import com.example.administrator.a18master.MainActivity;
 import com.example.administrator.a18master.R;
 import com.example.administrator.a18master.utils.ActivityUtils;
@@ -21,10 +20,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter> implements RegisterView {
+public class RegisterActivity extends MvpActivity<RegisterView, RegisterPresenter> implements RegisterView {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
     @BindView(R.id.et_username)
     EditText et_userName;
     @BindView(R.id.et_pwd)
@@ -33,6 +30,8 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
     EditText et_pwdAgain;
     @BindView(R.id.btn_register)
     Button btn_register;
+//    @BindView(R.id.register_toolbar)
+//    Toolbar registerToolbar;
 
     private String username;
     private String password;
@@ -45,6 +44,9 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         ButterKnife.bind(this);
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().hide();
+//        }
         activityUtils = new ActivityUtils(this);
         init();
     }
@@ -57,8 +59,13 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
 
     private void init() {
         //给左上角加一个返回图标，需要重写菜单点击事件，否则点击无效
-//        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        setSupportActionBar(registerToolbar);
+        if (getSupportActionBar()!=null){
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setTitle("注册");
+
+        }
+
         et_userName.addTextChangedListener(textWatcher);
         et_pwd.addTextChangedListener(textWatcher);
         et_pwdAgain.addTextChangedListener(textWatcher);
@@ -94,21 +101,21 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
     @OnClick(R.id.btn_register)
     public void onClick() {
         if (RegexUtils.verifyUsername(username) != RegexUtils.VERIFY_SUCCESS) {
-                String msg = getString(R.string.username_rules);
-                showUserPasswordError(msg);
-                return;
-            } else if (RegexUtils.verifyPassword(password) != RegexUtils.VERIFY_SUCCESS) {
-                String msg = getString(R.string.password_rules);
-                showUserPasswordError(msg);
-                return;
-            } else if (!TextUtils.equals(password, pwd_again)) {
-                String msg = getString(R.string.username_equal_pwd);
-                showUserPasswordError(msg);
-                return;
+            String msg = getString(R.string.username_rules);
+            showUserPasswordError(msg);
+            return;
+        } else if (RegexUtils.verifyPassword(password) != RegexUtils.VERIFY_SUCCESS) {
+            String msg = getString(R.string.password_rules);
+            showUserPasswordError(msg);
+            return;
+        } else if (!TextUtils.equals(password, pwd_again)) {
+            String msg = getString(R.string.username_equal_pwd);
+            showUserPasswordError(msg);
+            return;
         }
 
         //业务类执行注册的业务
-        presenter.register(username,password);
+        presenter.register(username, password);
 
     }
 
@@ -123,7 +130,7 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
         //如果已经显示，则跳出
         if (dialogFragment.isVisible()) return;
         //"进度条"显示
-        dialogFragment.show(getSupportFragmentManager(),"progress_dialog_fragment");
+        dialogFragment.show(getSupportFragmentManager(), "progress_dialog_fragment");
     }
 
     @Override
@@ -152,6 +159,6 @@ public class RegisterActivity extends MvpActivity<RegisterView,RegisterPresenter
     public void showUserPasswordError(String msg) {
         //展示弹出，提示错误信息
         AlertDialogFragment fragment = AlertDialogFragment.newInstance(msg);
-        fragment.show(getSupportFragmentManager(),getString(R.string.username_pwd_rule));
+        fragment.show(getSupportFragmentManager(), getString(R.string.username_pwd_rule));
     }
 }

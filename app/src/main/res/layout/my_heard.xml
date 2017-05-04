@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_270dp"
@@ -16,98 +18,117 @@
             android:textColor="@color/colorBai"
             android:textSize="@dimen/size_18dp" />
 
-        <ImageView
+        <com.pkmmte.view.CircularImageView
             android:id="@+id/my_image_toux"
             android:layout_width="@dimen/size_100dp"
             android:layout_height="@dimen/size_100dp"
             android:layout_below="@+id/my_titles"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/minetxbg" />
+            android:src="@drawable/minetxbg"/>
+        <!--<ImageView-->
+        <!--android:id="@+id/my_image_toux"-->
+        <!--android:layout_width="@dimen/size_100dp"-->
+        <!--android:layout_height="@dimen/size_100dp"-->
+        <!--android:layout_below="@+id/my_titles"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/minetxbg" />-->
 
         <View
-            android:layout_below="@+id/my_relative_dl"
             android:id="@+id/my_view"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/size_10dp"/>
+            android:layout_height="@dimen/size_10dp"
+            android:layout_below="@+id/my_relative_dl" />
+
         <TextView
-            android:layout_below="@+id/my_view"
             android:id="@+id/my_black_text"
-            android:background="@color/heise"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:weightSum="3"
+            android:layout_height="match_parent"
             android:layout_below="@+id/my_view"
+            android:background="@color/heise" />
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@+id/my_view"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
             <LinearLayout
-                android:weightSum="2"
-                android:orientation="vertical"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="@dimen/size_32px"
-                    android:textColor="@color/my_wdjf_titles"
                     android:text="@string/my_wdjf_titles"
+                    android:textColor="@color/my_wdjf_titles"
+                    android:textSize="@dimen/size_32px" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="@string/my_wdjf"
-                    android:gravity="center"
-                    android:textColor="@color/colorBai"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
+                    android:textColor="@color/colorBai" />
             </LinearLayout>
+
             <LinearLayout
-                android:weightSum="2"
-                android:orientation="vertical"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
                 <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:textSize="@dimen/size_32px"
+                    android:text="@string/my_wdye_titles"
                     android:textColor="@color/my_wdjf_title1"
-                    android:text="@string/my_wdye_titles"
+                    android:textSize="@dimen/size_32px" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="@string/my_wdye"
-                    android:gravity="center"
-                    android:textColor="@color/colorBai"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
+                    android:textColor="@color/colorBai" />
             </LinearLayout>
+
             <LinearLayout
-                android:weightSum="2"
-                android:orientation="vertical"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="2">
+
                 <TextView
-                    android:gravity="center"
-                    android:textSize="@dimen/size_32px"
-                    android:textColor="@color/my_wdcz_titles"
-                    android:text="@string/my_wdye_titles"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"/>
-                <TextView
-                    android:text="@string/my_wdcz"
-                    android:gravity="center"
-                    android:textColor="@color/colorBai"
                     android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my_wdye_titles"
+                    android:textColor="@color/my_wdcz_titles"
+                    android:textSize="@dimen/size_32px" />
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="0dp" />
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/my_wdcz"
+                    android:textColor="@color/colorBai" />
             </LinearLayout>
         </LinearLayout>
+
         <RelativeLayout
             android:id="@+id/my_relative_dl"
             android:layout_width="match_parent"
@@ -148,13 +169,13 @@
             </LinearLayout>
 
             <ImageView
-                android:src="@drawable/ic_chevron_right_bai_24dp"
+                android:id="@+id/imageView4"
                 android:layout_width="@dimen/size_30dp"
                 android:layout_height="@dimen/size_30dp"
-                android:id="@+id/imageView4"
                 android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size_20dp"
                 android:layout_toEndOf="@+id/linearLayout"
-                android:layout_marginStart="@dimen/size_20dp" />
+                android:src="@drawable/ic_chevron_right_bai_24dp" />
         </RelativeLayout>
 
 

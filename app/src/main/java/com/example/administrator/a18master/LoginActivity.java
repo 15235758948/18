@@ -58,6 +58,9 @@ public class LoginActivity extends MvpActivity<LoginView,LoginPresenter> impleme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
+        if(getSupportActionBar()!=null){
+            getSupportActionBar().hide();
+        }
         activityUtils = new ActivityUtils(this);
 //        register.setOnClickListener(new View.OnClickListener() {
 //            @Override

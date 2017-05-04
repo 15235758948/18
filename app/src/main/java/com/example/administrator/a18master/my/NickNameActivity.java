@@ -23,8 +23,8 @@ import okhttp3.Call;
 
 public class NickNameActivity extends AppCompatActivity {
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
+//    @BindView(R.id.toolbar)
+//    Toolbar toolbar;
     @BindView(R.id.et_nickname)
     EditText etNickName;
 
@@ -40,6 +40,7 @@ public class NickNameActivity extends AppCompatActivity {
 
 //        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("昵称修改");
 
         activityUtils = new ActivityUtils(this);
     }

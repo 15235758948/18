@@ -27,6 +27,7 @@
             <include layout="@layout/my_item" />
 
             <Button
+                android:id="@+id/my_tuichu"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_42dp"
                 android:layout_marginBottom="@dimen/size_70dp"

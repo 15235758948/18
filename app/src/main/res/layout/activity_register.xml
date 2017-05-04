@@ -5,20 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="@string/title_register" />
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/register_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:title="@string/title_register" />-->
 
     <EditText
         android:id="@+id/et_username"
         style="@style/AppTheme.EditText.Big"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_60dp"
-        android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="@dimen/size_23dp"
         android:layout_marginRight="@dimen/size_23dp"

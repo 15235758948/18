@@ -5,7 +5,7 @@
     android:layout_height="60dp"
     android:orientation="horizontal"
     android:gravity="center"
-    android:background="@color/whitesmoke"
+    android:background="@color/bg_page"
     tools:ignore="Overdraw">
 
     <TextView

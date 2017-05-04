@@ -4,24 +4,42 @@
     android:id="@+id/activity_person"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/bg_page">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+        <!--app:title="@string/me_person_info" />-->
+
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:title="@string/me_person_info" />
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_login_out"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:background="@color/bg_page" />
+
+    <Button
+        android:id="@+id/btn_login_out"
+        style="@style/AppTheme.Button.18master"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/login_out" />
 
     <RelativeLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@color/bg_page"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <com.pkmmte.view.CircularImageView
             android:id="@+id/iv_user_head"
@@ -42,31 +60,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_marginLeft="@dimen/size_20dp"
             android:text="头像"
-            android:textSize="@dimen/size_20dp"
+            android:textColor="@color/text_color_hint"
+            android:textSize="@dimen/size_18sp"
             android:id="@+id/textView3"
             android:layout_alignBottom="@+id/iv_user_head"
             android:layout_alignParentStart="true"
             android:layout_marginStart="16dp" />
     </RelativeLayout>
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/btn_login_out"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout"
-        android:background="@color/bg_page" />
-
-    <Button
-        android:id="@+id/btn_login_out"
-        style="@style/AppTheme.Button.18master"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/login_out" />
 
 </RelativeLayout>

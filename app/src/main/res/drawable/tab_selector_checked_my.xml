@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/footico_my"
+    <item android:drawable="@drawable/footco4"
         android:state_checked="false" />
-    <item android:drawable="@drawable/footco_on_my"
+    <item android:drawable="@drawable/footco_on_4"
         android:state_checked="true" />
 </selector>

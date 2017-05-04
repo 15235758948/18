@@ -7,7 +7,7 @@ package com.example.administrator.a18master.network;
 public class EasyShopApi {
 
     //服务器地址
-    static final String BASE_URL = "http://wx.feicuiedu.com:9094/yitao/";
+    static final String BASE_URL = "http:// wx.feicuiedu.com:9094/yitao/";
 
     //图片的根路径
     public static final String IMAGE_URL = "http://wx.feicuiedu.com:9094/";

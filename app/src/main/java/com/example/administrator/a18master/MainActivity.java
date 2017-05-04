@@ -1,6 +1,7 @@
 package com.example.administrator.a18master;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.view.menu.MenuBuilder;
@@ -10,6 +11,8 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import com.example.administrator.a18master.my.CachePreferences;
 import com.example.popmenu.PopupMenuView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -84,9 +87,14 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
                         break;
                     case R.id.rbMe:
-                        myFragment = new MyFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_content, myFragment)
-                                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+                        if (CachePreferences.getUser().getName() == null){
+                            Intent intent=new Intent(MainActivity.this,LoginActivity.class);
+                            startActivity(intent);
+                        }else{
+                            myFragment = new MyFragment();
+                            getSupportFragmentManager().beginTransaction().replace(R.id.main_content, myFragment)
+                                    .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+                        }
                         break;
                     default:
                         break;
@@ -94,7 +102,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             }
         });
     }
-
+//    wx.feicuiedu.com:9094/yitao
 
     @Override
     public void onClick(View v) {

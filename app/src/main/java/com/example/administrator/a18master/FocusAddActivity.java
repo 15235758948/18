@@ -28,7 +28,7 @@ public class FocusAddActivity extends Activity {
         switch (view.getId()) {
             case R.id.add_concern_fh:
                finish();
-                
+
                 break;
 
         }

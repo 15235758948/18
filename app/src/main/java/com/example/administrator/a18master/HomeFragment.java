@@ -26,6 +26,7 @@ import com.example.administrator.a18master.home.FragmentZhuanAdapter;
 import com.example.administrator.a18master.home.GridViewAdapter;
 import com.example.administrator.a18master.home.Model;
 import com.example.administrator.a18master.home.ViewPagerAdapter;
+import com.example.administrator.a18master.utils.ActivityUtils;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -33,6 +34,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 /**
@@ -93,6 +95,7 @@ public class HomeFragment extends Fragment {
     TextView homeXsqgYuan8;
     @BindView(R.id.toolbar_editText)
     EditText toolbarEditText;
+
     //    计时器
     private long mHour = 23;
     private long mMin = 59;
@@ -131,12 +134,14 @@ public class HomeFragment extends Fragment {
      * 当前显示的是第几页
      */
     private int curIndex = 0;
+    private ActivityUtils activityUtils;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fg_home, null);
         ButterKnife.bind(this, view);
+        activityUtils = new ActivityUtils(this);
 //               轮播
         initBanner();
         initBanners();
@@ -371,6 +376,18 @@ public class HomeFragment extends Fragment {
                     mHour = 23;
                 }
             }
+        }
+    }
+
+    @OnClick({R.id.toolbar_image, R.id.toolbar_qd_text})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.toolbar_image:
+            case R.id.toolbar_qd_text:
+                activityUtils.startActivity(SignInActivity.class);
+
+                break;
+
         }
     }
 }

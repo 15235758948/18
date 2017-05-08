@@ -35,7 +35,8 @@
         <activity android:name=".my.NickNameActivity" />
         <activity android:name=".mvplogin.Login.LoginMvpActivity" />
         <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".FocusAddActivity"/>
+        <activity android:name=".FocusAddActivity" />
+        <activity android:name=".SignInActivity" />
     </application>
 
 </manifest>

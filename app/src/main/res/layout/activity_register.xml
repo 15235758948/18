@@ -25,7 +25,8 @@
         android:background="@color/whitesmoke"
         android:drawableLeft="@drawable/selector_ic_person"
         android:hint="@string/username"
-        android:maxLength="20" />
+        android:maxLength="20"
+        android:singleLine="true"/>
 
     <EditText
         android:id="@+id/et_pwd"
@@ -41,7 +42,8 @@
         android:layout_marginTop="@dimen/size_6dp"
         android:drawableLeft="@drawable/selector_ic_lock"
         android:hint="@string/password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:singleLine="true"/>
 
     <EditText
         android:id="@+id/et_pwdAgain"
@@ -57,7 +59,8 @@
         android:background="@color/whitesmoke"
         android:drawableLeft="@drawable/selector_ic_lock"
         android:hint="@string/pwd_again"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:singleLine="true"/>
 
 
     <Button

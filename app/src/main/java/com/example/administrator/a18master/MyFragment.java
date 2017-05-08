@@ -87,6 +87,7 @@ public class MyFragment extends Fragment {
             case R.id.my_wdqg_image:
 //                ToDo:跳转我的抢购页面
                 activityUtils.showToast("跳转我的抢购页面,待实现");
+                break;
 //                activityUtils.startActivity();
 //
 //            case R.id.my_relative_dl:

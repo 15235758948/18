@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.administrator.a18master">
+
     <!-- 网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 相机权限 -->
@@ -9,8 +10,9 @@
     <!-- SD卡读写权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--手机短信验证码权限-->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 手机短信验证码权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".EasyShopApplication"
         android:allowBackup="true"
@@ -32,7 +34,8 @@
         <activity android:name=".register.RegisterActivity" />
         <activity android:name=".my.NickNameActivity" />
         <activity android:name=".mvplogin.Login.LoginMvpActivity" />
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".FocusAddActivity"/>
     </application>
-
 
 </manifest>

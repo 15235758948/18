@@ -18,7 +18,8 @@
         android:layout_toStartOf="@+id/btn_get_captcha"
         android:hint="电话号码"
         android:inputType="phone"
-        android:maxLength="11"/>
+        android:maxLength="11"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/btn_get_captcha"
@@ -38,7 +39,8 @@
         android:layout_marginTop="10dp"
         android:hint="验证码"
         android:inputType="number"
-        android:maxLength="6"/>
+        android:maxLength="6"
+        android:singleLine="true"/>
 
     <Button
         android:id="@+id/btn_login"
@@ -46,5 +48,5 @@
         android:layout_height="55dp"
         android:layout_below="@+id/et_captcha"
         android:layout_marginTop="20dp"
-        android:text="绑定"/>
+        android:text="点击绑定"/>
 </RelativeLayout>

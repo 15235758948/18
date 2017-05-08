@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -90,6 +91,8 @@ public class HomeFragment extends Fragment {
     TextView homeXsqgYuan7;
     @BindView(R.id.home_xsqg_yuan8)
     TextView homeXsqgYuan8;
+    @BindView(R.id.toolbar_editText)
+    EditText toolbarEditText;
     //    计时器
     private long mHour = 23;
     private long mMin = 59;
@@ -167,6 +170,14 @@ public class HomeFragment extends Fragment {
         //设置圆点
         setOvalLayout();
         initDawlayout();
+//        给搜索框设置宽度
+        WindowManager wm = this.getActivity().getWindowManager();//获取屏幕宽高
+        int width1 = wm.getDefaultDisplay().getWidth();
+        int height1 = wm.getDefaultDisplay().getHeight();
+        ViewGroup.LayoutParams para = toolbarEditText.getLayoutParams();
+        para.width = (width1 / 2 * 1);//修改宽度
+        para.height = height1;//修改高度
+        toolbarEditText.setLayoutParams(para); //设置修改后的布局。
         return view;
 
     }
@@ -177,48 +188,48 @@ public class HomeFragment extends Fragment {
         int width1 = wm.getDefaultDisplay().getWidth();
         int height1 = wm.getDefaultDisplay().getHeight();
         ViewGroup.LayoutParams para1 = homeXsqgZhuti1.getLayoutParams();//获取drawerlayout的布局
-        para1.width = (width1-10) / 3 ;//修改宽度
+        para1.width = (width1 - 10) / 3;//修改宽度
         para1.height = height1;//修改高度
         homeXsqgZhuti1.setLayoutParams(para1); //设置修改后的布局。
         homeXsqgYuan1.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para2 = homeXsqgZhuti2.getLayoutParams();//获取drawerlayout的布局
-        para2.width =(width1-10) / 3 ;//修改宽度
+        para2.width = (width1 - 10) / 3;//修改宽度
         para2.height = height1;//修改高度
         homeXsqgZhuti2.setLayoutParams(para2); //设置修改后的布局。
         homeXsqgYuan2.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para3 = homeXsqgZhuti3.getLayoutParams();//获取drawerlayout的布局
-        para3.width =(width1-10) / 3 ;//修改宽度
+        para3.width = (width1 - 10) / 3;//修改宽度
         para3.height = height1;//修改高度
         homeXsqgZhuti3.setLayoutParams(para3); //设置修改后的布局。
         homeXsqgYuan3.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para4 = homeXsqgZhuti4.getLayoutParams();//获取drawerlayout的布局
-        para4.width =(width1-10) / 3 ;//修改宽度
+        para4.width = (width1 - 10) / 3;//修改宽度
         para4.height = height1;//修改高度
         homeXsqgZhuti4.setLayoutParams(para4); //设置修改后的布局。
         homeXsqgYuan4.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para5 = homeXsqgZhuti5.getLayoutParams();//获取drawerlayout的布局
-        para5.width = (width1-10) / 3;//修改宽度
+        para5.width = (width1 - 10) / 3;//修改宽度
         para5.height = height1;//修改高度
         homeXsqgZhuti5.setLayoutParams(para5); //设置修改后的布局。
         homeXsqgYuan5.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para6 = homeXsqgZhuti6.getLayoutParams();//获取drawerlayout的布局
-        para6.width = (width1-10) / 3;//修改宽度
+        para6.width = (width1 - 10) / 3;//修改宽度
         para6.height = height1;//修改高度
         homeXsqgZhuti6.setLayoutParams(para6); //设置修改后的布局。
         homeXsqgYuan6.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
         ViewGroup.LayoutParams para7 = homeXsqgZhuti7.getLayoutParams();//获取drawerlayout的布局
-        para7.width =(width1-10) / 3;//修改宽度
+        para7.width = (width1 - 10) / 3;//修改宽度
         para7.height = height1;//修改高度
         homeXsqgZhuti7.setLayoutParams(para7); //设置修改后的布局。
         homeXsqgYuan7.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
 
         ViewGroup.LayoutParams para8 = homeXsqgZhuti8.getLayoutParams();//获取drawerlayout的布局
-        para8.width =(width1-10) / 3;//修改宽度
+        para8.width = (width1 - 10) / 3;//修改宽度
         para8.height = height1;//修改高度
         homeXsqgZhuti8.setLayoutParams(para8); //设置修改后的布局。
         homeXsqgYuan8.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);

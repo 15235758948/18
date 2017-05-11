@@ -19,6 +19,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.administrator.a18master.baidumap.LocationDemo;
+import com.example.administrator.a18master.baidumap.MapMainActivity;
 import com.example.administrator.a18master.base.banner.BannerAdapter;
 import com.example.administrator.a18master.base.banner.BannerLayout;
 import com.example.administrator.a18master.base.banner.LocalBanner;
@@ -379,13 +381,16 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    @OnClick({R.id.toolbar_image, R.id.toolbar_qd_text})
+    @OnClick({R.id.toolbar_image, R.id.toolbar_qd_text,R.id.toolbar_city_text})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.toolbar_image:
             case R.id.toolbar_qd_text:
                 activityUtils.startActivity(SignInActivity.class);
-
+                break;
+            case R.id.toolbar_city_text:
+                
+                activityUtils.startActivity(LocationDemo.class);
                 break;
 
         }

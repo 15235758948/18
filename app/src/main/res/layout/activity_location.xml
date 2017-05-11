@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapsView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+</LinearLayout>
+
+
+    <!--第三种布局--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--android:background="#3253"--><!--android:fitsSystemWindows="true">-->
+
+    <!--<RelativeLayout--><!--android:layout_width="wrap_content"--><!--android:layout_height="40dp">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_title"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerVertical="true"--><!--android:layout_marginLeft="10dp"--><!--android:text="BaiduMapTest" />-->
+
+    <!--<TextView--><!--android:id="@+id/tv_city"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_alignParentRight="true"--><!--android:layout_centerVertical="true"--><!--android:padding="10dp" />--><!--</RelativeLayout>-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+    <!--<com.baidu.mapapi.map.MapView--><!--android:id="@+id/mapview"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:clickable="true" />-->
+
+    <!--<RelativeLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:background="#66000000">-->
+
+    <!--<TextView--><!--android:id="@+id/tv_address"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:textColor="@color/colorBai"--><!--android:textSize="14sp" />--><!--</RelativeLayout>-->
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:src="@mipmap/icon_mapmarker" />-->
+
+    <!--<RelativeLayout--><!--android:id="@+id/rl_locating_point"--><!--android:layout_width="40dp"--><!--android:layout_height="40dp"--><!--android:layout_alignParentBottom="true"--><!--android:layout_marginBottom="40dp"--><!--android:layout_marginLeft="5dp"--><!--android:background="@color/colorBai">-->
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:src="@mipmap/main_icon_follow" />--><!--</RelativeLayout>--><!--</RelativeLayout>--><!--</LinearLayout>-->

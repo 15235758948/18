@@ -1,9 +1,9 @@
 package com.example.administrator.a18master;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.text.format.Time;
 import android.view.View;
 import android.widget.Button;
@@ -13,22 +13,20 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+
 /**
  * Created by Administrator on 2017/5/8.
  */
 public class SignInActivity extends Activity {
-    //    @BindView(R.id.sign_user)
-//    TextView signUser;
-//    @BindView(R.id.sign_jifen)
-//    TextView signJifen;
+
     @BindView(R.id.sign_day)
     TextView signDay;
     @BindView(R.id.button_sign)
     Button buttonSign;
-    //定义共享优先数据及基础字段
-    private String MY_RMBCost = "MY_RMBCost";
-
+    //    //定义共享优先数据及基础字段
+    private String signDays = "signDay";
     private String TodayTime = "TodayTime";
+
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,23 +42,34 @@ public class SignInActivity extends Activity {
     private void initSign() {
 //        final Button bt_jz = (Button) findViewById(R.id.bt_jz);
         //读取共享数据
-        SharedPreferences my_rmb_data = getSharedPreferences(MY_RMBCost, 0);
+        SharedPreferences preferences = getSharedPreferences("user", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        SharedPreferences my_rmb_data = getSharedPreferences(signDays, 0);
 
         Time t = new Time();
         t.setToNow();
         int lastmonth = t.month + 1;
         final String str = t.year + "年" + lastmonth + "月" + t.monthDay + "日";
-
-
         final String nowtime = my_rmb_data.getString(TodayTime, "").toString();
+        int i = 0;
 
         if (nowtime.equals(str) == true) {
-            signDay.setText("日期：" + nowtime + "已签到！");
+            if (i > -1) {
+                i = i + 1;
+                signDay.setText("您已连续签到" + i + "天");
+
+            }
+//            signDay.setText("日期：" + nowtime + "已签到！");
 //            buttonSign.setBackgroundResource(R.drawable.aa);
         } else {
-            signDay.setText("日期：" + str);
+            signDay.setText("今日未签到");
 //            buttonSign.setBackgroundResource(R.drawable.b);
         }
+        i = i + 1;
+        String signDay1 = "您已连续签到" + i + "天";
+        editor.putInt("i", i);
+        editor.putString("signDay", signDay1);
+        editor.commit();
 
         //按钮操作部分
 
@@ -68,14 +77,20 @@ public class SignInActivity extends Activity {
         buttonSign.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                SharedPreferences my_rmb_data = getSharedPreferences(MY_RMBCost, 0);
+                SharedPreferences preferences = getSharedPreferences("user", Context.MODE_PRIVATE);
+                SharedPreferences my_rmb_data = getSharedPreferences(signDays, 0);
                 if (my_rmb_data.getString(TodayTime, "").toString().equals(str) == true) {
                     Toast.makeText(SignInActivity.this, "今日已签到！", Toast.LENGTH_SHORT).show();
                 } else {
                     my_rmb_data.edit()
                             .putString(TodayTime, str)
                             .commit();
-                    signDay.setText("日期：" + str + "已签到！");
+                    int i = preferences.getInt("i", 1);
+                    i = i + 1;
+                    String signDay1 = preferences.getString("signDay", "您已连续签到" + i + "天");
+                    signDay.setText(signDay1);
+
+//                    signDay.setText("日期：" + str + "已签到！");
 //                    buttonSign.setBackgroundResource(R.drawable.aa);
                     Toast.makeText(SignInActivity.this, "签到成功！", Toast.LENGTH_SHORT).show();
                 }

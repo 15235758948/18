@@ -85,7 +85,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="20dp"
-            android:background="#daa520"
+            android:background="#f67b00"
             android:text="点击进行签到" />
     </RelativeLayout>
 

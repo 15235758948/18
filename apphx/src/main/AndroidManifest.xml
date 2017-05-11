@@ -78,14 +78,14 @@
                   android:theme="@style/HxAppTheme"/>
 
         <!-- 百度地图所需的service -->
-        <service
-            android:name="com.baidu.location.f"
-            android:enabled="true"
-            android:process=":remote"/>
+        <!--<service-->
+            <!--android:name="com.baidu.location.f"-->
+            <!--android:enabled="true"-->
+            <!--android:process=":remote"/>-->
 
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="ETDCKMez4L3WMj5F80jIx7HyA0UGLZTk"/>
+        <!--<meta-data-->
+            <!--android:name="com.baidu.lbsapi.API_KEY"-->
+            <!--android:value="ETDCKMez4L3WMj5F80jIx7HyA0UGLZTk"/>-->
         <!-- *********地图相关功能:结束********* -->
 
         <!-- 搜索建议内容提供者 -->

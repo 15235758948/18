@@ -1,5 +1,6 @@
 package com.example.administrator.a18master;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -221,7 +222,7 @@ public class ShopFragment extends Fragment {
             }
         });
     }
-    @OnClick({R.id.supplier_list_product, R.id.supplier_list_activity_jl,R.id.supplier_list_sort,R.id.supplier_list_activity})
+    @OnClick({R.id.supplier_list_product, R.id.supplier_list_activity_jl,R.id.supplier_list_sort,R.id.supplier_list_activity,R.id.my_concern_fh})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.supplier_list_product:
@@ -251,6 +252,10 @@ public class ShopFragment extends Fragment {
                 mPopListview.setAdapter(mMenuAdapter4);
                 popupMenu.showAsDropDown(supplier_list_activity_jl, 0, 2);
                 menuIndex = 3;
+                break;
+            case R.id.my_concern_fh:
+                Intent intent=new Intent(getActivity(),MainActivity.class);
+                startActivity(intent);
                 break;
         }
     }

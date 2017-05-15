@@ -93,7 +93,6 @@ dependencies {
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.1.6'
     //View注入工具
-
     //    apt 'com.jakewharton:butterknife-compiler:latest.release'
     compile 'com.jakewharton:butterknife:latest.release'
     //内存泄漏检查
@@ -103,20 +102,15 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-//    compile files('libs/AMap_Location_V3.00_20160922.jar')
-//    compile files('libs/baidumapapi_base_v4_1_1.jar')
-//    compile files('libs/baidumapapi_cloud_v4_1_1.jar')
-//    compile files('libs/baidumapapi_map_v4_1_1.jar')
-//    compile files('libs/baidumapapi_radar_v4_1_1.jar')
-//    compile files('libs/baidumapapi_search_v4_1_1.jar')
-//    compile files('libs/baidumapapi_util_v4_1_1.jar')
-//    compile files('libs/locSDK_6.13.jar')
-//    compile files('libs/pinyin4j-2.5.0.jar')
-//    compile files('libs/baidumapapi_base_v4_3_0.jar')
-//    compile files('libs/baidumapapi_cloud_v4_3_0.jar')
-//    compile files('libs/baidumapapi_map_v4_3_0.jar')
-//    compile files('libs/baidumapapi_radar_v4_3_0.jar')
-//    compile files('libs/baidumapapi_search_v4_3_0.jar')
-//    compile files('libs/baidumapapi_util_v4_3_0.jar')
-//    compile 'pub.devrel:easypermissions:0.2.0'
+    //recyclerview分组，顶部浮动
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile 'com.android.support:support-v4:25.3.0'
+    // picasso和转换库
+    compile 'jp.wasabeef:picasso-transformations:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile "de.halfbit:pinned-section-listview:1.0.0"
+//    tablelayout的design依赖
+    compile "com.android.support:design:25.3.0"
 }

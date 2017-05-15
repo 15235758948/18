@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.administrator.a18master.commons.AvatarLoadOptions;
 import com.example.administrator.a18master.my.CachePreferences;
 import com.example.administrator.a18master.my.ZHXxiActivity;
+import com.example.administrator.a18master.my.myqg.MyQiangGou;
 import com.example.administrator.a18master.network.EasyShopApi;
 import com.example.administrator.a18master.utils.ActivityUtils;
 import com.feicuiedu.apphx.model.HxUserManager;
@@ -85,10 +86,9 @@ public class MyFragment extends Fragment {
 //                startActivity(intent);
                 break;
             case R.id.my_wdqg_image:
-//                ToDo:跳转我的抢购页面
-                activityUtils.showToast("跳转我的抢购页面,待实现");
+                activityUtils.startActivity(MyQiangGou.class);
                 break;
-//                activityUtils.startActivity();
+
 //
 //            case R.id.my_relative_dl:
 //                intent = new Intent(getContext(), ZHXxiActivity.class);

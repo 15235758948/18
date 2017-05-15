@@ -9,18 +9,18 @@
         android:layout_height="45dp"
         android:background="@color/colorAccent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/size_10dp"
-            android:gravity="center"
-            android:text="抢购"
-            android:textColor="@color/whitesmoke" />
-        <!--<ImageView-->
-        <!--android:id="@+id/my_concern_fh"-->
-        <!--android:layout_width="45dp"-->
-        <!--android:layout_height="45dp"-->
-        <!--android:src="@drawable/ic_chevron_left_black_24dp" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/size_10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="抢购"-->
+            <!--android:textColor="@color/whitesmoke" />-->
+        <ImageView
+        android:id="@+id/my_concern_fh"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_chevron_left_black_24dp" />
 
         <EditText
             android:id="@+id/sseditText"

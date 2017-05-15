@@ -1,5 +1,8 @@
 package com.example.administrator.a18master;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
@@ -20,7 +23,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.administrator.a18master.baidumap.LocationDemo;
-import com.example.administrator.a18master.baidumap.MapMainActivity;
 import com.example.administrator.a18master.base.banner.BannerAdapter;
 import com.example.administrator.a18master.base.banner.BannerLayout;
 import com.example.administrator.a18master.base.banner.LocalBanner;
@@ -137,7 +139,9 @@ public class HomeFragment extends Fragment {
      */
     private int curIndex = 0;
     private ActivityUtils activityUtils;
-
+    // Fragment管理对象
+    private android.support.v4.app.FragmentManager manager;
+    private android.support.v4.app.FragmentTransaction ft;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -187,6 +191,12 @@ public class HomeFragment extends Fragment {
         toolbarEditText.setLayoutParams(para); //设置修改后的布局。
         return view;
 
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        manager = getFragmentManager();
     }
 
     //获取屏幕的高宽
@@ -263,17 +273,17 @@ public class HomeFragment extends Fragment {
         }
         // 默认显示第一页
         mLlDot.getChildAt(0).findViewById(R.id.v_dot)
-                .setBackgroundResource(R.drawable.dot_selected);
+                .setBackgroundResource(R.drawable.dot_normal);
         mPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             public void onPageSelected(int position) {
                 // 取消圆点选中
                 mLlDot.getChildAt(curIndex)
                         .findViewById(R.id.v_dot)
-                        .setBackgroundResource(R.drawable.dot_normal);
+                        .setBackgroundResource(R.drawable.dot_selected);
                 // 圆点选中
                 mLlDot.getChildAt(position)
                         .findViewById(R.id.v_dot)
-                        .setBackgroundResource(R.drawable.dot_selected);
+                        .setBackgroundResource(R.drawable.dot_normal);
                 curIndex = position;
             }
 
@@ -359,6 +369,7 @@ public class HomeFragment extends Fragment {
                     }
                 }
             }
+
         }).start();
     }
 
@@ -381,7 +392,7 @@ public class HomeFragment extends Fragment {
         }
     }
 
-    @OnClick({R.id.toolbar_image, R.id.toolbar_qd_text,R.id.toolbar_city_text})
+    @OnClick({R.id.toolbar_image, R.id.toolbar_qd_text,R.id.toolbar_city_text,R.id.countdown_layout})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.toolbar_image:
@@ -389,10 +400,18 @@ public class HomeFragment extends Fragment {
                 activityUtils.startActivity(SignInActivity.class);
                 break;
             case R.id.toolbar_city_text:
-                
                 activityUtils.startActivity(LocationDemo.class);
+                break;
+            case R.id.countdown_layout:
+                ShopFragment myJDEditFragment = new ShopFragment();
+                ft = manager.beginTransaction();
+                //当前的fragment会被myJDEditFragment替换
+                ft.replace(R.id.main_content, myJDEditFragment);
+                ft.addToBackStack(null);
+                ft.commit();
                 break;
 
         }
     }
+
 }

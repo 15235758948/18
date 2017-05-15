@@ -10,8 +10,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.administrator.a18master.utils.ActivityUtils;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
 /**
@@ -26,12 +29,14 @@ public class SignInActivity extends Activity {
     //    //定义共享优先数据及基础字段
     private String signDays = "signDay";
     private String TodayTime = "TodayTime";
+    private ActivityUtils activityUtils;
 
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
         ButterKnife.bind(this);
+        activityUtils=new ActivityUtils(this);
         if (getActionBar() != null) {
             getActionBar().hide();
         }
@@ -98,9 +103,13 @@ public class SignInActivity extends Activity {
         });
     }
 
-//    @OnClick({R.id.sign_user, R.id.sign_jifen, R.id.sign_day, R.id.button_sign})
-//    public void onClick(View view) {
-//        switch (view.getId()) {
+    @OnClick({R.id.sign_user, R.id.sign_jifen, R.id.sign_day, R.id.button_sign,R.id.sign_back})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.sign_back:
+               finish();
+                break;
+
 //            case R.id.sign_user:
 //                break;
 //            case R.id.sign_jifen:
@@ -109,6 +118,6 @@ public class SignInActivity extends Activity {
 //                break;
 //            case R.id.button_sign:
 //                break;
-//        }
-//    }
+        }
+    }
 }

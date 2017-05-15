@@ -17,5 +17,5 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         app:ci_drawable="@drawable/dot_normal"
-        app:ci_drawable_unselected="@drawable/dot_focesed" />
+        app:ci_drawable_unselected="@drawable/dot_selected" />
 </merge>

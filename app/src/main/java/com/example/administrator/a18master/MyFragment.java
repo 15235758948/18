@@ -13,7 +13,12 @@ import android.widget.TextView;
 import com.example.administrator.a18master.commons.AvatarLoadOptions;
 import com.example.administrator.a18master.my.CachePreferences;
 import com.example.administrator.a18master.my.ZHXxiActivity;
+import com.example.administrator.a18master.my.mydc.MyDingCanActivity;
+import com.example.administrator.a18master.my.mydz.MyDingZuoActivity;
+import com.example.administrator.a18master.my.myjdyy.MyJiuDianActivity;
 import com.example.administrator.a18master.my.myqg.MyQiangGou;
+import com.example.administrator.a18master.my.myshop.MyShop;
+import com.example.administrator.a18master.my.myyg.MyYunGouActivity;
 import com.example.administrator.a18master.network.EasyShopApi;
 import com.example.administrator.a18master.utils.ActivityUtils;
 import com.feicuiedu.apphx.model.HxUserManager;
@@ -68,7 +73,17 @@ public class MyFragment extends Fragment {
 
     }
 
-    @OnClick({R.id.my_image_toux, R.id.my_text_dengl, R.id.my_text_denglsj, R.id.imageView4, R.id.my_wdqg_image,R.id.my_tuichu})
+    @OnClick({R.id.my_image_toux,
+            R.id.my_text_dengl,
+            R.id.my_text_denglsj,
+            R.id.imageView4,
+            R.id.my_wdqg_image,
+            R.id.my_wdgw_image,
+            R.id.my_wddc_image,
+            R.id.my_wddz_image,
+            R.id.my_wdyg_image,
+            R.id.my_wdjdyy_image,
+            R.id.my_tuichu})
     public void onClick(View view) {
         // 需要判断是否登录，从而决定跳转位置
         if (CachePreferences.getUser().getName() == null) {
@@ -87,6 +102,21 @@ public class MyFragment extends Fragment {
                 break;
             case R.id.my_wdqg_image:
                 activityUtils.startActivity(MyQiangGou.class);
+                break;
+            case R.id.my_wdgw_image:
+                activityUtils.startActivity(MyShop.class);
+                break;
+            case R.id.my_wddc_image:
+                activityUtils.startActivity(MyDingCanActivity.class);
+                break;
+            case R.id.my_wddz_image:
+                activityUtils.startActivity(MyDingZuoActivity.class);
+                break;
+            case R.id.my_wdyg_image:
+                activityUtils.startActivity(MyYunGouActivity.class);
+                break;
+            case R.id.my_wdjdyy_image:
+                activityUtils.startActivity(MyJiuDianActivity.class);
                 break;
 
 //

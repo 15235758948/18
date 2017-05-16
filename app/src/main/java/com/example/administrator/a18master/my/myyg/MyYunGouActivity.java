@@ -1,18 +1,22 @@
-package com.example.administrator.a18master.my.myqg;
+package com.example.administrator.a18master.my.myyg;
 
-
-
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.administrator.a18master.R;
+import com.example.administrator.a18master.my.mydc.FragmentJInXing;
+import com.example.administrator.a18master.my.mydz.FragmentPay;
+import com.example.administrator.a18master.my.mydz.FragmentRefund;
+import com.example.administrator.a18master.my.myqg.FragmentComplete;
+import com.example.administrator.a18master.my.myqg.FragmentDaiFu;
+import com.example.administrator.a18master.my.myqg.TitleDownAdapter;
+import com.example.administrator.a18master.my.myshop.FragmentYiFu;
 
 import java.util.ArrayList;
 
@@ -20,8 +24,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MyQiangGou extends AppCompatActivity {
-
+public class MyYunGouActivity extends AppCompatActivity {
     @BindView(R.id.id_playlayout)
     TabLayout idPlaylayout;
     @BindView(R.id.id_playviewpager)
@@ -31,13 +34,16 @@ public class MyQiangGou extends AppCompatActivity {
     private ArrayList<String> mTitles = new ArrayList<String>();
     private FragmentManager fragmentManager;
     private FragmentDaiFu fragmentDaiFu;
-    private FragmentComplete fragmentComplete;
+    private FragmentAll fragmentAll;
+    private FragmentJInXing fragmentJInXing;
+    private FragmentPublish fragmentPublish;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_qiang_gou);
+        setContentView(R.layout.activity_my_yun_gou);
         ButterKnife.bind(this);
         //        隐藏Actionbar
         if (getSupportActionBar() != null) {
@@ -45,18 +51,25 @@ public class MyQiangGou extends AppCompatActivity {
         }
         initView();
     }
+
     private void initView() {
-        mTitles.add("待付款");
-        mTitles.add("已完成");
+        mTitles.add("全部");
+        mTitles.add("进行中");
+        mTitles.add("已揭晓");
+
 
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
-        fragmentDaiFu = FragmentDaiFu.newInstance();
-        fragmentComplete = FragmentComplete.newInstance();
+        fragmentAll=FragmentAll.newInstance();
+        fragmentJInXing = FragmentJInXing.newInstance();
+        fragmentPublish=FragmentPublish.newInstance();
 
-        fragmentsList.add(fragmentDaiFu);
-        fragmentsList.add(fragmentComplete);
+
+        fragmentsList.add(fragmentAll);
+        fragmentsList.add(fragmentJInXing);
+        fragmentsList.add(fragmentPublish);
+
 
 
         TitleDownAdapter myPagerAdapter = new TitleDownAdapter(getSupportFragmentManager(), fragmentsList, mTitles);
@@ -84,10 +97,10 @@ public class MyQiangGou extends AppCompatActivity {
         });
     }
 
-    @OnClick({R.id.drawer_wodeshoucang, R.id.id_playlayout})
+    @OnClick({R.id.drawer_wodeyungou, R.id.id_playlayout})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.drawer_wodeshoucang:
+            case R.id.drawer_wodeyungou:
                 finish();
                 break;
         }

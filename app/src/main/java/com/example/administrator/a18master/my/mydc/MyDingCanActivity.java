@@ -1,18 +1,19 @@
-package com.example.administrator.a18master.my.myqg;
+package com.example.administrator.a18master.my.mydc;
 
-
-
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.a18master.R;
+import com.example.administrator.a18master.my.myqg.FragmentComplete;
+import com.example.administrator.a18master.my.myqg.FragmentDaiFu;
+import com.example.administrator.a18master.my.myqg.TitleDownAdapter;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MyQiangGou extends AppCompatActivity {
+public class MyDingCanActivity extends AppCompatActivity {
 
     @BindView(R.id.id_playlayout)
     TabLayout idPlaylayout;
@@ -31,13 +32,14 @@ public class MyQiangGou extends AppCompatActivity {
     private ArrayList<String> mTitles = new ArrayList<String>();
     private FragmentManager fragmentManager;
     private FragmentDaiFu fragmentDaiFu;
+    private FragmentJInXing fragmentJInXing;
     private FragmentComplete fragmentComplete;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_qiang_gou);
+        setContentView(R.layout.activity_my_ding_can);
         ButterKnife.bind(this);
         //        隐藏Actionbar
         if (getSupportActionBar() != null) {
@@ -45,17 +47,21 @@ public class MyQiangGou extends AppCompatActivity {
         }
         initView();
     }
+
     private void initView() {
         mTitles.add("待付款");
+        mTitles.add("进行中");
         mTitles.add("已完成");
 
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
         fragmentDaiFu = FragmentDaiFu.newInstance();
+        fragmentJInXing=FragmentJInXing.newInstance();
         fragmentComplete = FragmentComplete.newInstance();
 
         fragmentsList.add(fragmentDaiFu);
+        fragmentsList.add(fragmentJInXing);
         fragmentsList.add(fragmentComplete);
 
 
@@ -84,10 +90,10 @@ public class MyQiangGou extends AppCompatActivity {
         });
     }
 
-    @OnClick({R.id.drawer_wodeshoucang, R.id.id_playlayout})
+    @OnClick({R.id.drawer_wodedingcan, R.id.id_playlayout})
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.drawer_wodeshoucang:
+            case R.id.drawer_wodedingcan:
                 finish();
                 break;
         }

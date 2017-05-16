@@ -51,7 +51,7 @@
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"></service>
+            android:process=":remote" />
         <!-- 密匙 -->
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -67,7 +67,12 @@
         <activity android:name=".baidumap.MapMainActivity" />
         <activity android:name=".baidumap.LocationDemo" />
         <activity android:name=".baidumap.SearchActivity" />
-        <activity android:name=".my.myqg.MyQiangGou"></activity>
+        <activity android:name=".my.myqg.MyQiangGou" />
+        <activity android:name=".my.myshop.MyShop" />
+        <activity android:name=".my.mydc.MyDingCanActivity" />
+        <activity android:name=".my.mydz.MyDingZuoActivity" />
+        <activity android:name=".my.myyg.MyYunGouActivity" />
+        <activity android:name=".my.myjdyy.MyJiuDianActivity"></activity>
     </application>
 
 </manifest>

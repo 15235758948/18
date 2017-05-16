@@ -20,6 +20,8 @@
     <color name="color_radio">#eee</color>
     <color name="home_xsqg_qian">#f53c42</color>
     <color name="tuichu">#e74c3c</color>
+    <!--分割线-->
+    <color name="divideColor">#f0f1f2</color>
 
     <color name="my_wdjf_titles">#f8ff2b</color>
     <color name="my_wdjf_title1">#ff9c00</color>

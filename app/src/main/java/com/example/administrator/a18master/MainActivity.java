@@ -51,9 +51,9 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 //        activityUtils= new ActivityUtils(this);
-        if (getActionBar() != null) {
-            getActionBar().hide();
-        }
+//        if (getActionBar() != null) {
+//            getActionBar().hide();
+//        }
 //        默认不弹出小键盘，点击才弹出
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 //        底部导航+Fragment切换

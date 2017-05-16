@@ -3,12 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:id="@+id/qianggou_daifu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="点击这里"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/size_20dp"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="全部"/>
 
 </LinearLayout>

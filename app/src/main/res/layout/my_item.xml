@@ -14,8 +14,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-
-            android:id="@+id/my_list_text1"
+            android:id="@+id/my_list_qgq"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image1"
@@ -66,7 +65,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text2"
+            android:id="@+id/my_list_yhq"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image2"
@@ -117,7 +116,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text3"
+            android:id="@+id/my_list_zc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image3"
@@ -168,7 +167,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text4"
+            android:id="@+id/my_list_hd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image4"
@@ -219,7 +218,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text5"
+            android:id="@+id/my_list_sc"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image5"
@@ -270,7 +269,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text6"
+            android:id="@+id/my_list_yhmd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image6"
@@ -321,7 +320,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text7"
+            android:id="@+id/my_list_yy"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image7"
@@ -372,7 +371,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text8"
+            android:id="@+id/my_list_shxx"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image8"
@@ -413,7 +412,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text9"
+            android:id="@+id/my_list_qmjjr"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image9"
@@ -453,7 +452,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text10"
+            android:id="@+id/my_list_jfdh"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image10"
@@ -493,7 +492,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text11"
+            android:id="@+id/my_list_kd"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image11"
@@ -533,7 +532,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text12"
+            android:id="@+id/my_list_txsq"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image12"
@@ -573,7 +572,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text13"
+            android:id="@+id/my_list_xxzx"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image13"
@@ -613,7 +612,7 @@
         android:paddingRight="@dimen/size_10dp">
 
         <TextView
-            android:id="@+id/my_list_text14"
+            android:id="@+id/my_list_wdxx"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@+id/my_list_image14"

@@ -1,8 +1,5 @@
 package com.example.administrator.a18master;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.os.Handler;
@@ -148,10 +145,9 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fg_home, null);
         ButterKnife.bind(this, view);
         activityUtils = new ActivityUtils(this);
-//               轮播
+//        轮播
         initBanner();
         initBanners();
-
 //        专享推荐
         initViewQ();
 //        计时器

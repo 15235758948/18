@@ -72,7 +72,11 @@
         <activity android:name=".my.mydc.MyDingCanActivity" />
         <activity android:name=".my.mydz.MyDingZuoActivity" />
         <activity android:name=".my.myyg.MyYunGouActivity" />
-        <activity android:name=".my.myjdyy.MyJiuDianActivity"></activity>
+        <activity android:name=".my.myjdyy.MyJiuDianActivity" />
+        <activity android:name=".my.myqgq.MyShopQuanActivity"></activity>
+        <activity android:name=".robshop.DetailsActivity"></activity>
+        <activity android:name=".zhifu.ZhiFu2Activity"></activity>
+        <activity android:name=".zhifu.ZhiFuActivity"></activity>
     </application>
 
 </manifest>

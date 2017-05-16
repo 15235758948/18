@@ -2,18 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_my_qiang_gou"
+    android:id="@+id/activity_my_shop_quan"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.a18master.my.myqg.MyQiangGou">
+    tools:context="com.example.administrator.a18master.my.myqgq.MyShopQuanActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimary">
 
         <TextView
-            android:id="@+id/drawer_wodeshoucang"
+            android:id="@+id/drawer_wodeqgq"
             android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:layout_alignParentBottom="true"
@@ -24,7 +24,7 @@
             android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
             android:drawablePadding="10dp"
             android:gravity="center"
-            android:text="我的抢购"
+            android:text="我的抢购券"
             android:textColor="@drawable/selector_text_press_back"
             android:textSize="20dp" />
     </RelativeLayout>

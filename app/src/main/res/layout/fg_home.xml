@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="第一个页面"-->
-        <!--android:textSize="22sp"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_marginTop="199dp"-->
-        <!--android:id="@+id/textView3" />-->
     <include
         android:id="@+id/include1"
         layout="@layout/home_toolbar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size_56dp" />
-
     <include
         android:id="@+id/include2"
         layout="@layout/activity_home"
@@ -27,4 +16,4 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
-</RelativeLayout>
+</LinearLayout>

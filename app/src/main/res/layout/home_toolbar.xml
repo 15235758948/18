@@ -46,19 +46,18 @@
             android:textSize="@dimen/size_40px" />
 
         <EditText
-            android:cursorVisible="true"
+            android:cursorVisible="false"
             android:singleLine="true"
             android:textSize="@dimen/size_14dp"
             android:id="@+id/toolbar_editText"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="10dp"
             android:background="@drawable/rounded_editview"
             android:drawableLeft="@drawable/icn18"
             android:hint="@string/toolbar_text"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-           />
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 </LinearLayout>

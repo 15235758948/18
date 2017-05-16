@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RelativeLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_45dp">
+    <ImageView
+        android:id="@+id/qianggou_fh"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_width="@dimen/size_45dp"
+        android:layout_height="@dimen/size_45dp" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/colorBai"
+        android:text="抢购详情"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:padding="@dimen/size_10dp"
+        android:src="@drawable/icn16"
+        android:layout_width="@dimen/size_45dp"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+    <com.example.administrator.a18master.robshop.PullToZoomScrollViewEx
+        android:id="@+id/scroll_view"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

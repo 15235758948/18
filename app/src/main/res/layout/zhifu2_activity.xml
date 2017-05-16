@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/zhifu2_fh"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="支付订单"
+            android:textColor="@color/colorBai"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp">
+
+                <TextView
+                    android:id="@+id/ding_zonglei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:gravity="center_vertical"
+                    android:text="是德国大使馆的是"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+
+                <include
+                    android:id="@+id/include"
+                    layout="@layout/yuan_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/dingshu_danjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/include"
+                    android:gravity="center"
+                    android:text="40"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp">
+
+
+                <TextView
+                    android:id="@+id/dingshu_shuliang"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_5dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/ding_shuliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:gravity="center_vertical"
+                    android:text="数量"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp">
+
+                <TextView
+                    android:id="@+id/ding_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:gravity="center_vertical"
+                    android:text="可使用积分"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:text="0积分"
+
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:gravity="center_vertical"
+                    android:text="手机优惠"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+
+                <include
+                    android:id="@+id/include"
+                    layout="@layout/yuan_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/dingshu_youhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/include"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp">
+
+                <include
+                    android:id="@+id/include"
+                    layout="@layout/yuan_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/ding_zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:gravity="center_vertical"
+                    android:text="总价"
+                    android:textColor="@color/heise"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/dingshu_zongjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/include"
+                    android:gravity="center"
+                    android:text="40"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:background="@color/divideColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:gravity="center_vertical"
+                android:text="支付方式"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:id="@+id/relat_zhifubao"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_70dp">
+
+                <ImageView
+                    android:id="@+id/iv_zhifubao"
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_margin="@dimen/size_15dp"
+                    android:src="@drawable/pay_ico1" />
+
+                <TextView
+                    android:id="@+id/tv_zhifubao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_zhifubao"
+                    android:layout_toEndOf="@+id/iv_zhifubao"
+                    android:layout_toStartOf="@+id/smoothCheckBox1"
+                    android:text="推荐已安装支付宝客户端的用户使用"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_zhifubao"
+                    android:layout_toEndOf="@+id/iv_zhifubao"
+                    android:layout_toStartOf="@+id/smoothCheckBox1"
+                    android:text="支付宝"
+                    android:textColor="@color/heise"
+                    android:textSize="16sp" />
+
+                <com.example.administrator.a18master.zhifu.SmoothCheckBox
+                    android:id="@+id/smoothCheckBox1"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/size_15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    app:color_checked="#ff3c00"
+                    app:color_unchecked_stroke="#ff3c00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:id="@+id/relat_yue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_70dp">
+
+                <ImageView
+                    android:id="@+id/iv_yue"
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_margin="@dimen/size_15dp"
+                    android:src="@drawable/pay_ico4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_toEndOf="@+id/iv_yue"
+                    android:layout_toStartOf="@+id/smoothCheckBox2"
+                    android:text="余额支付"
+                    android:textColor="@color/heise"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_yue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_yue"
+                    android:layout_toEndOf="@+id/iv_yue"
+                    android:layout_toStartOf="@+id/smoothCheckBox2"
+                    android:text="推荐已安装支付宝客户端的用户使用"
+                    android:textSize="14sp" />
+
+                <com.example.administrator.a18master.zhifu.SmoothCheckBox
+                    android:id="@+id/smoothCheckBox2"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/size_15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    app:color_checked="#ff3c00"
+                    app:color_unchecked_stroke="#ff3c00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:id="@+id/relat_weixin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_70dp">
+
+                <ImageView
+                    android:id="@+id/iv_weixin"
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_margin="@dimen/size_15dp"
+                    android:src="@drawable/pay_ico3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_toEndOf="@+id/iv_weixin"
+                    android:layout_toStartOf="@+id/smoothCheckBox3"
+                    android:text="微信"
+                    android:textColor="@color/heise"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_weixin"
+                    android:layout_toEndOf="@+id/iv_weixin"
+                    android:layout_toStartOf="@+id/smoothCheckBox3"
+                    android:text="推荐已安装支付宝客户端的用户使用"
+                    android:textSize="14sp" />
+
+                <com.example.administrator.a18master.zhifu.SmoothCheckBox
+                    android:id="@+id/smoothCheckBox3"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/size_15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    app:color_checked="#ff3c00"
+                    app:color_unchecked_stroke="#ff3c00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:id="@+id/relat_hdfkuan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_70dp">
+
+                <ImageView
+                    android:id="@+id/iv_hdfk"
+                    android:layout_width="@dimen/size_40dp"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_margin="@dimen/size_15dp"
+                    android:src="@drawable/pay_ico8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_toEndOf="@+id/iv_hdfk"
+                    android:layout_toStartOf="@+id/smoothCheckBox4"
+                    android:text="货到付款"
+                    android:textColor="@color/heise"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_hdfk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_hdfk"
+                    android:layout_toEndOf="@+id/iv_hdfk"
+                    android:layout_toStartOf="@+id/smoothCheckBox4"
+                    android:text="推荐已安装支付宝客户端的用户使用"
+                    android:textSize="14sp" />
+
+                <com.example.administrator.a18master.zhifu.SmoothCheckBox
+                    android:id="@+id/smoothCheckBox4"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/size_15dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    app:color_checked="#ff3c00"
+                    app:color_unchecked_stroke="#ff3c00" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divideColor" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/size_15dp"
+                android:background="@color/divideColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_70dp"
+                android:layout_marginBottom="@dimen/size_70dp">
+
+                <Button
+                    android:id="@+id/zfdd_querzf"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:background="@drawable/button_shape"
+                    android:text="确认支付"
+                    android:textColor="@color/colorBai"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

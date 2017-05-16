@@ -1,4 +1,4 @@
-package com.example.administrator.a18master.my.mydc;
+package com.example.administrator.a18master.my.myqgq;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,17 +13,15 @@ import com.example.administrator.a18master.R;
  * Created by Administrator on 2017/5/16.
  */
 
-public class FragmentJInXing extends Fragment {
-
+public class FragmentNoUse extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view =inflater.inflate(R.layout.fragment_jinxing,null);
-
+        View view=inflater.inflate(R.layout.fragment_nouse,null);
         return view;
     }
 
-    public static FragmentJInXing newInstance() {
-        return new FragmentJInXing();
+    public static FragmentNoUse newInstance() {
+        return new FragmentNoUse();
     }
 }

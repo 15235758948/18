@@ -17,6 +17,7 @@ import com.example.administrator.a18master.my.mydc.MyDingCanActivity;
 import com.example.administrator.a18master.my.mydz.MyDingZuoActivity;
 import com.example.administrator.a18master.my.myjdyy.MyJiuDianActivity;
 import com.example.administrator.a18master.my.myqg.MyQiangGou;
+import com.example.administrator.a18master.my.myqgq.MyShopQuanActivity;
 import com.example.administrator.a18master.my.myshop.MyShop;
 import com.example.administrator.a18master.my.myyg.MyYunGouActivity;
 import com.example.administrator.a18master.network.EasyShopApi;
@@ -83,6 +84,17 @@ public class MyFragment extends Fragment {
             R.id.my_wddz_image,
             R.id.my_wdyg_image,
             R.id.my_wdjdyy_image,
+            R.id.my_list_qgq,
+            R.id.my_list_yhq,
+            R.id.my_list_zc,
+            R.id.my_list_hd,
+            R.id.my_list_sc,
+            R.id.my_list_yhmd,
+            R.id.my_list_yy,
+            R.id.my_list_shxx,
+            R.id.my_list_qmjjr,
+            R.id.my_list_jfdh,
+            R.id.my_list_kd,
             R.id.my_tuichu})
     public void onClick(View view) {
         // 需要判断是否登录，从而决定跳转位置
@@ -118,7 +130,29 @@ public class MyFragment extends Fragment {
             case R.id.my_wdjdyy_image:
                 activityUtils.startActivity(MyJiuDianActivity.class);
                 break;
-
+            case R.id.my_list_qgq:
+                activityUtils.startActivity(MyShopQuanActivity.class);
+                break;
+            case R.id.my_list_yhq:
+                break;
+            case R.id.my_list_zc:
+                break;
+            case R.id.my_list_hd:
+                break;
+            case R.id.my_list_sc:
+                break;
+            case R.id.my_list_yhmd:
+                break;
+            case R.id.my_list_yy:
+                break;
+            case R.id.my_list_shxx:
+                break;
+            case R.id.my_list_qmjjr:
+                break;
+            case R.id.my_list_jfdh:
+                break;
+            case R.id.my_list_kd:
+                break;
 //
 //            case R.id.my_relative_dl:
 //                intent = new Intent(getContext(), ZHXxiActivity.class);
@@ -137,4 +171,5 @@ public class MyFragment extends Fragment {
                 EaseUI.getInstance().getNotifier().reset();
         }
     }
+
 }
